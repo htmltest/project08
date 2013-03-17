@@ -1,0 +1,28 @@
+.header-ctrl,
+.header-menu,
+.footer-social,
+.footer-menu,
+.footer-menu-2,
+.header-expert-link,
+.header-expert-big,
+.dg-vk,
+.catalogue-recipes,
+.header-test,
+.detail-link,
+.header-section ul,
+.news-item-link,
+.product-breadcrumbs,
+.product-links,
+.product-other,
+.way-next,
+.way-left-title,
+.putevoditel-menu,
+.recipes-var-nutrition {display:none}
+
+a {color:#000 !important; text-decoration:none !important}
+h1,
+h2,
+h3,
+h4,
+.product-text,
+.putevoditel-header-text {color:#000 !important}

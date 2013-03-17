@@ -1,0 +1,63 @@
+.header-menu {top:61px}
+
+.header-section h1 {padding:19px 0 0 0}
+
+.footer-social-more {line-height:26px}
+.footer-social-more-window-list {line-height:22px}
+
+.footer-menu {padding:14px 0 10px 0}
+
+.content-input,
+.content-textarea,
+.content-form-window,
+.search-form,
+.expert-btn a,
+.window-inner {behavior:url(./js/PIE.htc)}
+
+.content-submit input  {line-height:36px}
+
+.registration-social {line-height:22px}
+.registration-social-item {padding-bottom:15px}
+
+.header-expert-big {padding-top:90px; height:47px}
+
+.contacts-name {line-height:20px; padding-top:4px}
+
+.dg-title-2 {margin-top:-16px}
+
+.content ol li:before {top:2px}
+
+.journalist-item-number {line-height:70px; line-height:62px!ie}
+
+.recipes-item .detail-link {background-position:left top}
+
+.way-left-title {background-position:1px top}
+.right-articles-item {padding-top:19px}
+
+.recipes-var-side .way-next-slider-item h3 {background-position:left 4px}
+
+.recipes-var-count {line-height:26px}
+.recipes-var-time {line-height:26px}
+
+.header-expert-title {top:117px}
+
+.header-section-expert h1 {padding:23px 0 0 0}
+
+.expert-btn a {line-height:40px}
+
+.window-gallery-title {padding:28px 0 17px 0}
+
+.window-gallery-download  {line-height:20px}
+
+.header-catalogue-title {top:162px}
+
+.catalogue-recipes-link {background-position:left top}
+
+.product-breadcrumbs {background-position:left 1px}
+
+.product-link {background-position:left top}
+.product-window-text {background-position:left top}
+
+.main-75-text-1 {padding-top:6px}
+
+.test-res-link {background-position:left top}
