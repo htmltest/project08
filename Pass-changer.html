@@ -5,14 +5,12 @@
         <title>Nescafe.ru</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
-        <link rel="stylesheet" href="css/cusel.css" type="text/css" />
 
         <!--[if IE]>
             <link rel="stylesheet" href="css/ie.css" type="text/css" />
         <![endif]-->
 
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="js/cusel-fixed-min-2.5.js"></script>
         <script type="text/javascript" src="js/tools.js"></script>
     </head>
 
@@ -39,9 +37,6 @@
                         </div>
                         <!-- header search END -->
 
-                        <div class="header-user-link"><a href="#">Регистрация</a></div>
-                        <div class="header-user-link"><a href="#">Авторизация</a></div>
-
                     </div>
                     <!-- header ctrl END -->
 
@@ -56,87 +51,43 @@
                     </div>
                     <!-- header menu END -->
 
-                    <div class="header-expert-link"><a href="#">Задайте вопрос эксперту</a></div>
-
-                    <!-- header section -->
-                    <div class="header-section header-section-expert">
-                        <h1>Есть вопрос о кофе?<br />Задайте его одному из наших экспертов</h1>
+                    <!-- header profile -->
+                    <div class="header-profile">
+                        <div class="header-profile-photo"><img src="images/header-profile-default.png" alt="" width="121" height="120" /><em></em></div>
+                        <h1>профиль - изменение пароля</h1>
                     </div>
-                    <!-- header section END -->
-
-                    <a href="#" class="header-test header-test-2">УЗНАЙ, КАкой кофе тебе подходит</a>
+                    <!-- header profile END -->
 
                 </div>
                 <!-- header END -->
 
                 <!-- content -->
                 <div class="content">
-
-                    <!-- expert content -->
-                    <div class="expert-content">
-
-                        <div class="expert-content-item">
-                            <div class="expert-content-left">
-                                <div class="expert-content-photo"><img src="files/expert-photo-1.jpg" alt="" width="180" height="181" /><img src="images/expert-photo.png" alt="" width="180" height="181" class="expert-content-photo-sup" /></div>
-                                <div class="expert-btn"><a href="#">Задать вопрос</a></div>
+                    <div class="registration-form profile-registration-form">
+                        <form action="#" method="post">
+                            <div class="profile">
+                                <div class="profile-form">
+                                    <div class="profile-form-name">Иванов Иван Иванович</div>
+                                    <div class="registration-form-inner">
+                                        <div class="content-input"><span>Старый пароль</span><input type="password" name="oldpassword" value="" /></div>
+                                        <div class="content-input"><span>Новый пароль</span><input type="password" name="newpassword" value="" /></div>
+                                        <div class="content-input"><span>Повторите новый пароль</span><input type="password" name="newpasswordre" value="" /></div>
+                                        <div class="content-form-row">
+                                            <div class="content-submit"><input type="submit" value="Отправить" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-menu">
+                                    <ul>
+                                        <li><a href="#">изменить профиль</a></li>
+                                        <li class="active"><a href="#">сменить пароль</a></li>
+                                        <li><a href="#">обратная связь</a></li>
+                                        <li><a href="#">выйти</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="expert-content-right">
-                                <h4>Оксана Драпкина</h4>
-                                <p>Профессор, заведующая отделением кардиологии, гастроэнтерологии и гепатологии им. В.Х.Василенко Первого МГМУ им. И.М.Сеченова.</p>
-                                <div class="detail-link"><a href="#">Подробнее об эксперте</a> <img src="images/li.png" alt="" width="8" height="11" /></div>
-                                <h5>Ответит на Ваши вопросы по следующим темам.</h5>
-                                <ul>
-                                    <li>Вреден ли кофе для сердца?</li>
-                                    <li>Что такое антиоксинданты и есть ли они в кофе?</li>
-                                    <li>Можно ли пить кофе беременным женщинам?</li>
-                                    <li>Как кофе влияет на кожу?</li>
-                                    <li>Сколько чашек кофе можно выпить в день?</li>
-                                    <li>Кофе и пищеварение</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="expert-content-item">
-                            <div class="expert-content-left">
-                                <div class="expert-content-photo"><img src="files/expert-photo-2.jpg" alt="" width="180" height="181" /><img src="images/expert-photo.png" alt="" width="180" height="181" class="expert-content-photo-sup" /></div>
-                                <div class="expert-btn"><a href="#">Задать вопрос</a></div>
-                            </div>
-                            <div class="expert-content-right">
-                                <h4>Галина Холмогорова</h4>
-                                <p>Старший научный сотрудник ГНИЦ Профилактической медицины, кандидат медицинских наук.</p>
-                                <div class="detail-link"><a href="#">Подробнее об эксперте</a> <img src="images/li.png" alt="" width="8" height="11" /></div>
-                                <h5>Ответит на Ваши вопросы по следующим темам.</h5>
-                                <ul>
-                                    <li>Как кофе влияет на память?</li>
-                                    <li>Кофе и умственные способности человека</li>
-                                    <li>Кофе – источник бодрости</li>
-                                    <li>Кофе и фитнес</li>
-                                    <li>Вреден ли кофеин в кофе?</li>
-                                    <li>Кофе и стройность</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="expert-content-item">
-                            <div class="expert-content-left">
-                                <div class="expert-content-photo"><img src="files/expert-photo-3.png" alt="" width="180" height="181" /><img src="images/expert-photo.png" alt="" width="180" height="181" class="expert-content-photo-sup" /></div>
-                                <div class="expert-btn"><a href="#">Задать вопрос</a></div>
-                            </div>
-                            <div class="expert-content-right">
-                                <h4>Эксперт NESCAF<span class="letter-e">É</span></h4>
-                                <h5>Ответит на Ваши вопросы по следующим темам.</h5>
-                                <ul>
-                                    <li>Где и как производят кофе Nescafe?</li>
-                                    <li>Является ли кофе Nescafe натуральным?</li>
-                                    <li>Когда и где впервые появился кофе Nescafe?</li>
-                                </ul>
-                                <h5 class="expert-hotline">Телефон горячей линии 8-800-200-7-200</h5>
-                            </div>
-                        </div>
-
+                        </form>
                     </div>
-                    <!-- expert content END -->
-
                 </div>
                 <!-- content END -->
 
@@ -252,58 +203,6 @@
             <div class="footer-nestle"><a href="#"><img src="images/footer-nestle.png" alt="" width="137" height="92" /></a></div>
         </div>
         <!-- footer END -->
-
-        <!-- window -->
-        <div class="window" id="window-question-expert">
-            <div class="window-inner">
-                <div class="window-ctrl-form">
-                    <form action="#" method="post" id="question-expert" class="window-form">
-                        <div class="content-select">
-                            <select name="theme">
-                                <option value="0">Выберите тему</option>
-                                <option value="1">Тема 1</option>
-                                <option value="2">Тема 2</option>
-                                <option value="3">Тема 3</option>
-                            </select>
-                        </div>
-                        <div class="content-select">
-                            <select name="expert">
-                                <option value="0">Выберите эксперта</option>
-                                <option value="1">Драпкина Оксана Михайловна</option>
-                                <option value="2">Холмогорова Галина Тимофеевна</option>
-                                <option value="3">Quality expert</option>
-                            </select>
-                        </div>
-                        <div class="content-input"><input type="text" name="email" value="Введите Ваш e-mail" onfocus="if (this.value == 'Введите Ваш e-mail') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Введите Ваш e-mail'; }" /></div>
-                        <div class="content-textarea"><textarea name="text" rows="5" cols="10" onfocus="if (this.value == 'Введите Ваш вопрос') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Введите Ваш вопрос'; }">Введите Ваш вопрос</textarea></div>
-                        <div class="content-form-row">
-                            <div class="content-form-right">
-                                <div class="content-submit"><input type="submit" value="отправить" /></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="window-ctrl-link"><a href="#">Возможно на Ваш вопрос уже ответили</a></div>
-                <a href="#" class="window-close"></a>
-            </div>
-        </div>
-        <!-- window END -->
-
-        <!-- window -->
-        <div class="window" id="window-error">
-            <div class="window-inner">
-                <div class="window-error-text"></div>
-            </div>
-        </div>
-        <!-- window END -->
-
-        <!-- window -->
-        <div class="window" id="window-success">
-            <div class="window-inner">
-                <div class="window-success-text">Запрос успешно отправлен.</div>
-            </div>
-        </div>
-        <!-- window END -->
 
     </body>
 </html>

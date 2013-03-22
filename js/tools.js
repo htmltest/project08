@@ -54,6 +54,26 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             $(this).find('span input').prop('checked', $(this).find('span').hasClass('checked')).trigger('change');
         });
 
+        $('.content-input').each(function() {
+            if ($(this).find('input').val() == '') {
+                $(this).find('span').show();
+            }
+        });
+
+        $('.content-input input').focus(function() {
+            $(this).parent().find('span').hide();
+        });
+
+        $('.content-input input').blur(function() {
+            if ($(this).val() == '') {
+                $(this).parent().find('span').show();
+            }
+        });
+
+        $('.content-input-file input').change(function() {
+            $(this).parent().find('span').html($(this).val());
+        });
+
         // "Следующие этапы производства"
         $('.way-next-slider').each(function() {
             $('.way-next-slider').data('curIndex', 0);
@@ -98,8 +118,8 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
 
         // форма "Задать вопрос"
         $('.expert-btn a').click(function() {
-            $('.window').show();
-            $('.window').css({'margin-top':-$('.window').height() / 2});
+            $('#window-question-expert').show();
+            $('#window-question-expert').css({'margin-top':-$('#window-question-expert').height() / 2});
             return false;
         });
 
@@ -223,6 +243,60 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             $('.product-window').hide();
             if ($.browser.msie && $.browser.version < 8) {
                 $('.content').css({'z-index': 'auto', 'position': 'static'});
+            }
+            return false;
+        });
+
+        $('#question-expert').submit(function() {
+            if ($('#question-expert input[name="theme"]').val() == '0') {
+                $('#window-error .window-error-text').html('Выберите тему');
+                $('#window-question-expert').hide();
+                $('#window-error').show();
+                $('#window-error').css({'margin-top':-$('#window-error').height() / 2});
+                window.setTimeout(function() {
+                    $('#window-error').hide();
+                    $('#window-question-expert').show();
+                }, 2000);
+            } else {
+                if ($('#question-expert input[name="expert"]').val() == '0') {
+                    $('#window-error .window-error-text').html('Выберите эксперта');
+                    $('#window-question-expert').hide();
+                    $('#window-error').show();
+                    $('#window-error').css({'margin-top':-$('#window-error').height() / 2});
+                    window.setTimeout(function() {
+                        $('#window-error').hide();
+                        $('#window-question-expert').show();
+                    }, 2000);
+                } else {
+                    if (!(/^([a-z0-9_\-]+\.)*[a-z0-9_\-]+@([a-z0-9][a-z0-9\-]*[a-z0-9]\.)+[a-z]{2,4}$/i).test($('#question-expert input[name="email"]').val())) {
+                        $('#window-error .window-error-text').html('Введите корректный e-mail');
+                        $('#window-question-expert').hide();
+                        $('#window-error').show();
+                        $('#window-error').css({'margin-top':-$('#window-error').height() / 2});
+                        window.setTimeout(function() {
+                            $('#window-error').hide();
+                            $('#window-question-expert').show();
+                        }, 2000);
+                    } else {
+                        if (($('#question-expert textarea[name="text"]').val() == '') || ($('#question-expert textarea[name="text"]').val() == 'Введите Ваш вопрос')) {
+                            $('#window-error .window-error-text').html('Введите Ваш вопрос');
+                            $('#window-question-expert').hide();
+                            $('#window-error').show();
+                            $('#window-error').css({'margin-top':-$('#window-error').height() / 2});
+                            window.setTimeout(function() {
+                                $('#window-error').hide();
+                                $('#window-question-expert').show();
+                            }, 2000);
+                        } else {
+                            $('#window-question-expert').hide();
+                            $('#window-success').show();
+                            $('#window-success').css({'margin-top':-$('#window-success').height() / 2});
+                            window.setTimeout(function() {
+                                $('#window-success').hide();
+                            }, 5000);
+                        }
+                    }
+                }
             }
             return false;
         });

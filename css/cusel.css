@@ -17,6 +17,8 @@
 .cusel .jScrollArrowUp {position:absolute; top:0; right:0; width:16px !important; height:15px; cursor:pointer; background:url(../images/select-arrow.png) no-repeat; overflow:hidden}
 .cusel .jScrollArrowDown {width:16px !important; height:16px; position:absolute; top:auto; bottom:0; right:0; cursor:pointer; background:url(../images/select-arrow.png) no-repeat left -15px; overflow:hidden}
 
+.cusel-iPad .cusel-scroll-pane {height:150px; overflow-y:auto !important}
+
 .window-form .cusel,
 .window-form .cuselFrameRight {background-image:url(../images/select-red.png)}
 .window-form .cusel {height:29px; font-size:14px; line-height:29px}

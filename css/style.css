@@ -84,6 +84,12 @@ img {border:none}
 .header-section ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .header-section ul li {float:left; margin:0 40px 0 0; padding:0; position:relative}
 
+.header-profile {position:absolute; left:47px; top:138px}
+.header-profile-photo {float:left; width:138px; height:155px; position:relative; line-height:0; overflow:hidden}
+.header-profile-photo img {position:relative}
+.header-profile-photo em {display:block; position:absolute; left:0; top:0; width:138px; height:155px; background:url(../images/header-profile.png)}
+.header-profile h1 {float:left; font:19px/21px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; margin:0; padding:30px 0 0 26px; letter-spacing:1px}
+
 .header-expert-big {position:absolute; left:652px; top:225px; display:block; color:#fff; width:90px; height:49px; padding:88px 0 0 40px; background:url(../images/header-expert-big.png); font:12px/15px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-expert-big:hover {color:#fff}
 .page-proizvodstvo .header-expert-big {top:438px}
@@ -221,10 +227,14 @@ img {border:none}
 .content-col-6 {float:left; width:468px}
 
 .content form {margin:0; padding:0; position:relative; zoom:1}
-.content-input {border:1px solid #d4d4d4; padding:0 10px 0 10px; margin:0 0 14px 0; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px}
+.content-input {border:1px solid #d4d4d4; padding:0 10px 0 10px; margin:0 0 14px 0; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; position:relative}
+.content-input-file {border:1px solid #d4d4d4; padding:0 10px 0 10px; height:20px; overflow:hidden; margin:0 0 14px 0; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; position:relative}
 .window .content-input {position:relative; zoom:1}
 .window .content-textarea {position:relative; zoom:1}
-.content-input input {vertical-align:top; height:16px; width:100%; padding:2px 0; margin:0; outline:none; color:#9e9e9e; font:13px/16px arial, helvetica, sans-serif; border:none; background:none}
+.content-input input {position:relative; vertical-align:top; height:16px; width:100%; padding:2px 0; margin:0; outline:none; color:#9e9e9e; font:13px/16px arial, helvetica, sans-serif; border:none; background:url(../images/black.gif)}
+.content-input span {display:none; position:absolute; left:10px; top:2px; font:13px/16px arial, helvetica, sans-serif; color:#9e9e9e}
+.content-input-file span {display:block; white-space:nowrap; position:absolute; left:10px; top:2px; font:13px/16px arial, helvetica, sans-serif; color:#9e9e9e; width:342px; overflow:hidden}
+.content-input-file input {position:absolute; top:0; right:0; height:200px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); cursor:pointer; font-size:200px}
 .content-textarea {border:1px solid #d4d4d4; padding:0 10px 0 10px; margin:0 0 14px 0; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px}
 .content-textarea textarea {vertical-align:top; height:70px; width:100%; padding:5px 0; margin:0; outline:none; color:#9e9e9e; font:13px/16px arial, helvetica, sans-serif; border:none; background:none; overflow:auto; resize:none}
 .content-select {height:22px; margin:0 0 14px 0}
@@ -781,3 +791,21 @@ img {border:none}
 .main-product-2 {position:absolute; left:899px; top:6147px; opacity:0; margin-top:500px}
 .main-product-3 {position:absolute; left:1017px; top:6152px; opacity:0; margin-top:500px}
 .main-header-test {left:1450px; top:6235px; opacity:0}
+
+.window-error-text {color:#fff; text-align:center; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 51px 0}
+.window-success-text {color:#fff; text-align:center; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 51px 0}
+
+.profile-registration-form {width:auto}
+.profile {width:100%; margin-top:-23px}
+.profile:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.profile-photo {float:left; width:181px; height:181px; position:relative; line-height:0; overflow:hidden; margin:0 63px 0 7px}
+.profile-photo em {position:absolute; left:0; top:0; display:block; width:181px; height:181px; background:url(../images/profile-photo.png)}
+.profile-form {float:left; width:364px}
+.profile-form-name {font:16px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; padding:3px 0 39px 14px; letter-spacing:1px}
+.profile-menu {float:left; font:13px/21px SansRoundedWeb, arial, helvetica, sans-serif; padding:52px 0 0 54px}
+.profile-menu ul {margin:0; padding:0}
+.profile-menu ul li {margin:0; padding:0; background:none}
+.profile-menu ul li a {text-decoration:none; color:#b7b7b7}
+.profile-menu ul li a:hover,
+.profile-menu ul li.active a {text-decoration:underline}
+.profile-form .content-submit {margin-top:10px}
