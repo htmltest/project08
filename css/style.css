@@ -5,7 +5,8 @@
 html {height:100%; min-width:1000px}
 
 body {height:100%; min-width:1000px; margin:0; padding:0; font:13px/16px arial, helvetica, sans-serif; color:#424242; background:#fff url(../images/bg-wrap.png) repeat-y center top}
-body.page-main {background:#c10909 url(../images/bg-main.png) no-repeat center top}
+body.page-main {background:#c10909 url(../images/bg-main.jpg) no-repeat center top}
+body.page-main-loading {overflow:hidden}
 body.page-expert {background:#fff url(../images/bg-expert.png) center top}
 body.page-catalogue {background:#c10909 url(../images/bg-catalogue.jpg) center top}
 body.page-3in1 {background:#d59154 url(../images/bg-3in1.jpg) center top}
@@ -44,6 +45,8 @@ img {border:none}
 .page-montego .wrapper-inner {background:url(../images/bg-montego-inner.png) no-repeat center top}
 
 .header {height:300px; position:relative; color:#fff; z-index:2}
+.header-fix {position:fixed; width:940px; left:50%; top:0; margin-left:-470px; z-index:9}
+.header-fix-bg {position:fixed; left:0; top:0; width:100%; height:80px; background:#c10909 url(../images/bg-main.jpg) no-repeat center top; opacity:.5; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50)}
 .page-proizvodstvo .header {height:546px}
 .page-putevoditel .header {height:586px}
 .page-socotvetstvennost .header {height:550px}
@@ -128,9 +131,9 @@ img {border:none}
 
 .main {height:648px; position:relative}
 
-.main-75 {position:absolute; right:-41px; top:-222px; width:580px; height:586px; background:url(../images/main-75-bg.png)}
-.main-75-logo {position:absolute; right:72px; top:58px}
-.main-75-text-1 {margin:130px 0 0 75px; position:relative; z-index:2; font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; letter-spacing:1px; color:#fff; text-transform:uppercase; padding:0 0 0 28px; background:url(../images/main-75-text-1.png) no-repeat left center}
+.main-75 {position:absolute; right:-41px; top:-222px; width:580px; height:586px; background:url(../images/main-75-bg.png); overflow:hidden}
+.main-75-logo {position:absolute; right:42px; top:216px}
+.main-75-text-1 {margin:317px 0 0 75px; position:relative; z-index:2; font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; letter-spacing:1px; color:#fff; text-transform:uppercase; padding:0 0 0 28px; background:url(../images/main-75-text-1.png) no-repeat left center}
 .main-75-text-1 a,
 .main-75-text-1 a:hover {color:#fff}
 .main-75-text-2 {margin:0 0 0 103px; color:#fff; font:16px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; letter-spacing:1px; text-indent:20px}
@@ -138,13 +141,21 @@ img {border:none}
 .main-75-text-4 {margin:6px 0 0 75px; line-height:0}
 .main-75-text-5 {font:31px/33px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; letter-spacing:1px; margin:14px 0 0 150px}
 
-.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:192px; top:151px}
+.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:192px; top:151px; overflow:hidden}
 .main-way-title {display:block; font:21px/25px SansRoundedWeb, arial, helvetica, sans-serif; color:#a20909; text-transform:uppercase; padding:48px 0 0 31px}
 .main-way-text {display:block; font:15px/16px SansRoundedLightWeb, arial, helvetica, sans-serif; padding:3px 0 0 31px}
 
+.main-berry {width:107px; height:322px; position:absolute; left:268px; top:100px; overflow:hidden; line-height:0}
+
 .main-scroll {position:absolute; left:442px; top:394px; color:#fff; font-size:14px; padding:0 0 0 33px; background:url(../images/main-scroll.png) no-repeat 4px center}
+.page-main-loading .main-scroll {display:none}
 .main-auto {position:absolute; display:block; left:442px; top:417px; color:#fff; font-size:14px; line-height:23px; padding:0 0 0 33px; background:url(../images/main-auto.png) no-repeat left center}
+.page-main-loading .main-auto {display:none}
 .main-auto:hover {color:#fff}
+
+.main-loading {display:none; position:absolute; z-index:10000; left:442px; top:394px; width:44px; height:44px; background:url(../images/fancybox_overlay.png); overflow:hidden}
+.main-loading div {width:44px; height:44px; background:url(../images/fancybox_loading.gif) no-repeat center}
+.page-main-loading .main-loading {display:block}
 
 .content {padding:35px 0 0 0; width:100%}
 .content:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -669,4 +680,104 @@ img {border:none}
 .window-gallery-loading div {width:44px; height:44px; background:url(../images/fancybox_loading.gif) no-repeat center}
 .window-gallery-loading img {position:absolute; left:9999px; top:9999px}
 
-.main-tmp {margin:-374px 0 324px 0; position:relative; height:6792px; background:url(../files/zerno.png) no-repeat center top}
+.main-view {width:100%; position:relative}
+.main-view-inner {margin:0 -1920px; position:relative}
+.main-view-container {width:2560px; height:6738px; margin:0 auto; position:relative}
+
+.main-line-src {position:fixed; left:-9999px; top:-9999px; width:100%; height:100px; overflow:hidden}
+.main-line-src path {fill:none; stroke:#fff; stroke-width:2px}
+.main-line {position:absolute; left:620px; top:208px}
+
+.main-step {position:absolute; left:-60px; top:-15px; width:39px; height:56px; padding:6px 14px 0 9px; text-align:center; color:#fff; font:24px/41px SansRoundedWeb, arial, helvetica, sans-serif; background:url(../images/main-step.png)}
+
+.main-map {position:absolute; left:580px; top:-348px; display:none}
+
+.main-step-1-text {display:none; position:absolute; left:1389px; top:-188px; font-size:18px; line-height:22px; color:#fff; width:265px}
+
+.main-belt {position:absolute; left:0; top:-36px; width:0; height:199px; background:url(../images/main-belt-bg-center.png) no-repeat center; overflow:hidden}
+.main-belt-inner {position:relative; width:2560px; height:198px; background:url(../images/main-belt-bg.png); text-transform:uppercase; color:#fff; text-align:center; letter-spacing:8px; font:30px/188px SansRoundedWeb, arial, helvetica, sans-serif}
+
+.main-step-1-photo-1 {position:absolute; left:901px; top:-374px; opacity:0; margin-top:500px}
+.main-step-1-photo-2 {position:absolute; left:1119px; top:-175px; opacity:0; margin-top:500px}
+
+.main-step-2-photo {position:absolute; left:1293px; top:260px; opacity:0; margin-top:500px; width:317px; height:318px; background:url(../images/main-step-2-photo.png)}
+.main-step-2-text {display:none; position:absolute; left:906px; top:341px; font-size:18px; line-height:22px; color:#fff; width:360px}
+
+.main-berry-step-2-3 {display:none; position:absolute; left:1393px; top:360px}
+
+.main-step-3-photo {position:absolute; left:905px; top:682px; opacity:0; margin-top:500px}
+.main-step-3-text {display:none; position:absolute; left:1290px; top:816px; font-size:18px; line-height:22px; color:#fff; width:175px}
+
+.main-berry-step-3-4 {display:none; position:absolute; left:1005px; top:782px}
+
+.main-step-4-photo {position:absolute; left:1401px; top:1023px; width:317px; height:318px; background:url(../images/main-step-4-photo.png); opacity:0; margin-top:500px}
+.main-step-4-text {position:absolute; left:1097px; top:1096px; font-size:18px; line-height:22px; color:#fff; width:250px; display:none}
+
+.main-berry-step-4-5 {display:none; position:absolute; left:1401px; top:1023px; width:405px; height:405px; background:url(../images/main-berry-step-4-5.png)}
+
+.main-step-5-photo-1 {position:absolute; left:903px; top:1499px; opacity:0; margin-top:500px}
+.main-step-5-photo-2 {position:absolute; left:1156px; top:1465px; opacity:0; margin-top:500px}
+.main-step-5-text {display:none; position:absolute; left:907px; top:1366px; font-size:18px; line-height:22px; color:#fff; width:380px}
+
+.main-step-6-text {display:none; position:absolute; left:1389px; top:1568px; font-size:18px; line-height:22px; color:#fff; width:240px}
+.main-map-2 {display:none; position:absolute; left:1022px; top:1890px}
+.main-step-6-city {display:none; position:absolute; left:1373px; top:2020px; font-size:13px; line-height:16px; color:#fff; width:140px}
+.main-ship {position:absolute; left:1344px; top:1630px; margin-left:2000px}
+
+.main-step-7-text {position:absolute; left:1003px; top:2401px; font-size:18px; line-height:22px; color:#fff; width:250px; display:none}
+.main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0; opacity:0; margin-top:500px}
+.main-step-7-video img {display:block}
+.main-step-7-photo {position:absolute; left:1286px; top:2454px; opacity:0; margin-top:500px}
+
+.main-berry-step-7-8 {display:none; position:absolute; left:1459px; top:2286px}
+
+.main-step-8-text {position:absolute; left:907px; top:2697px; font-size:18px; line-height:22px; color:#fff; width:210px; display:none}
+.main-step-8-video {position:absolute; left:876px; top:2814px; width:261px; height:262px; overflow:hidden; line-height:0; opacity:0; margin-top:500px}
+.main-step-8-video img {display:block}
+
+.main-step-9-text {position:absolute; left:1293px; top:2989px; font-size:18px; line-height:22px; color:#fff; width:260px; display:none}
+.main-step-9-photo {position:absolute; left:1387px; top:3110px; width:318px; height:318px; background:url(../images/main-step-9-photo.png); opacity:0; margin-top:500px}
+
+.main-formula-1 {position:absolute; left:970px; top:3180px; opacity:0; margin-top:-500px}
+.main-formula-2 {position:absolute; left:1052px; top:3198px; opacity:0; margin-top:500px}
+.main-formula-3 {position:absolute; left:1098px; top:3191px; opacity:0; margin-top:500px}
+.main-formula-4 {position:absolute; left:1175px; top:3205px; opacity:0; margin-top:500px}
+.main-formula-5 {position:absolute; left:1238px; top:3195px; opacity:0; margin-top:500px}
+
+.main-step-10-text {position:absolute; left:1004px; top:3415px; font-size:18px; line-height:22px; color:#fff; width:160px; display:none}
+.main-step-10-photo {position:absolute; left:954px; top:3472px; opacity:0; margin-top:500px}
+
+.main-step-11-text {position:absolute; left:1100px; top:3836px; font-size:18px; line-height:22px; color:#fff; width:420px; display:none}
+.main-step-11-photo-1 {position:absolute; left:984px; top:3811px; display:none}
+.main-step-11-arrow-left {position:absolute; left:1131px; top:3906px; width:62px; height:0; background:url(../images/main-step-11-arrow-left.png)}
+.main-step-11-arrow-right {position:absolute; left:1376px; top:3910px; width:41px; height:0; background:url(../images/main-step-11-arrow-right.png)}
+.main-step-11-termo-left {position:absolute; left:1171px; top:3982px; opacity:0; margin-top:500px}
+.main-step-11-termo-right {position:absolute; left:1538px; top:3982px; opacity:0; margin-top:500px}
+.main-step-11-photo-2 {position:absolute; left:1009px; top:4008px; width:183px; height:184px; background:url(../images/main-step-11-photo-3.png); opacity:0; margin-top:500px}
+.main-step-11-photo-3 {position:absolute; left:1365px; top:4008px; width:183px; height:184px; background:url(../images/main-step-11-photo-2.png); opacity:0; margin-top:500px}
+.main-step-11-text-1 {position:absolute; left:1004px; top:4216px; font-size:14px; line-height:16px; color:#fff; width:230px; display:none}
+.main-step-11-text-1 div {padding:0 0 7px 20px; background:url(../images/main-step-11-title.png) no-repeat left top; font:16px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase}
+.main-step-11-text-2 {position:absolute; left:1365px; top:4216px; font-size:14px; line-height:16px; color:#fff; width:230px; display:none}
+.main-step-11-text-2 div {padding:0 0 7px 20px; background:url(../images/main-step-11-title.png) no-repeat left top; font:16px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase}
+.main-step-11-text-3 {position:absolute; left:1045px; top:4340px; color:#fff; font:20px/24px SansRoundedWeb, arial, helvetica, sans-serif; width:505px; display:none}
+
+.main-step-12-text {position:absolute; left:1388px; top:4525px; font-size:18px; line-height:22px; color:#fff; width:260px; display:none}
+.main-step-12-photo {position:absolute; left:885px; top:4472px; width:383px; height:384px; background:url(../images/main-step-12-photo.png); opacity:0; margin-top:500px}
+
+.main-step-13-text {position:absolute; left:1388px; top:4891px; font-size:18px; line-height:22px; color:#fff; width:200px; display:none}
+.main-step-13-photo {position:absolute; left:1388px; top:4967px; margin-top:500px; opacity:0}
+
+.main-lorry {position:absolute; left:897px; top:5008px; width:329px; height:157px; background:url(../images/main-lorry.png); line-height:0; margin-left:-2000px}
+.main-lorry-body {position:absolute; left:3px; top:0}
+.main-lorry-wheel-left {position:absolute; left:51px; bottom:1px}
+.main-lorry-wheel-right {position:absolute; left:260px; bottom:0}
+
+.main-step-14-text {position:absolute; left:907px; top:5560px; font-size:18px; line-height:22px; color:#fff; width:140px; display:none}
+.main-step-14-photo {position:absolute; left:1043px; top:5150px; width:440px; height:699px; background:url(../images/main-step-14-photo.png); display:none}
+.main-girl {position:absolute; left:1487px; top:5628px; margin-left:2000px}
+
+.main-products-title {position:absolute; left:810px; top:6091px; width:430px; color:#fff; text-transform:uppercase; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; display:none}
+.main-product-1 {position:absolute; left:795px; top:6147px; opacity:0; margin-top:500px}
+.main-product-2 {position:absolute; left:899px; top:6147px; opacity:0; margin-top:500px}
+.main-product-3 {position:absolute; left:1017px; top:6152px; opacity:0; margin-top:500px}
+.main-header-test {left:1450px; top:6235px; opacity:0}
