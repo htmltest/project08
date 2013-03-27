@@ -87,13 +87,13 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
                 $('.way-next-up').removeClass('disabled');
                 var curIndex = $('.way-next-slider').data('curIndex');
                 curIndex++;
-                if (curIndex + 3 == $('.way-next-slider-item').length) {
+                if (curIndex + 2 == $('.way-next-slider-item').length) {
                     $('.way-next-down').addClass('disabled');
                 }
                 $('.way-next-slider').data('curIndex', curIndex);
 
                 var curTop = Number($('.way-next-slider-content').css('top').replace(/px/, ''));
-                var curHeight = $('.way-next-slider-item').eq(curIndex + 2).height();
+                var curHeight = $('.way-next-slider-item').eq(curIndex - 1).height() + 2;
                 $('.way-next-slider-content').animate({'top': curTop - curHeight}, wayNextSpeed);
             }
             return false;
@@ -110,7 +110,7 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
                 $('.way-next-slider').data('curIndex', curIndex);
 
                 var curTop = Number($('.way-next-slider-content').css('top').replace(/px/, ''));
-                var curHeight = $('.way-next-slider-item').eq(curIndex + 3).height();
+                var curHeight = $('.way-next-slider-item').eq(curIndex).height() + 2;
                 $('.way-next-slider-content').animate({'top': curTop + curHeight}, wayNextSpeed);
             }
             return false;
@@ -118,8 +118,17 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
 
         // форма "Задать вопрос"
         $('.expert-btn a').click(function() {
+            $('body').append('<div class="window-gallery-loading"><div></div></div>');
             $('#window-question-expert').show();
             $('#window-question-expert').css({'margin-top':-$('#window-question-expert').height() / 2});
+            $('.window-gallery-loading').remove();
+            return false;
+        });
+
+        // пример окна с текстом
+        $('.expert-text-window').click(function() {
+            $('#window-text').show();
+            $('#window-text').css({'margin-top':-$('#window-text').height() / 2});
             return false;
         });
 
@@ -127,6 +136,12 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             $('.window').hide();
             $('.window-gallery-loading').remove();
             return false;
+        });
+
+        $(document).click(function(e) {
+            if ($(e.target).parents().filter('.window').length == 0) {
+                $('.window').hide();
+            }
         });
 
         $('body').keypress(function(e) {
@@ -151,21 +166,44 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             }
         });
 
-        // фотогалерея
-        $('.gallery-item a').click(function() {
+        //видео
+        $('.video-item a').click(function () {
             var curLink = $(this);
             var curIndex = $('.gallery-item a').index(curLink);
             $('.window-gallery').data('curIndex', curIndex);
-            $('body').append('<div class="window-gallery-loading"><div></div><img src="' + curLink.attr('href') + '" /></div>');
-            $('.window-gallery-big img').attr('src', curLink.attr('href'));
-            $('.window-gallery-big img').load(function() {
-                $('.window-gallery-title').html(curLink.attr('title'));
-                $('.window-gallery-download a').attr('href', curLink.attr('rel'));
-                $('.window-gallery-loading').remove();
-                $('.window').show();
-                $('.window').css({'margin-top': -$('.window').height() / 2});
-                $('.window').css({'margin-left': -$('.window').width() / 2});
-            });
+            var el = document.createElement("iframe");
+            document.body.appendChild(el);
+            el.id = 'iframe';
+            el.src = curLink.attr('href');
+            $('.window-gallery-big').html('');
+            $('.window-gallery-big').append(el);
+            $('.window-gallery-title').html(curLink.attr('title'));
+            $('.window-gallery-download a').attr('href', curLink.attr('rel'));
+            $('.window-gallery-loading').remove();
+            $('.window').show();
+            $('.window').css({ 'margin-top': -$('.window').height() / 2 });
+            $('.window').css({ 'margin-left': -$('.window').width() / 2 });
+
+            return false;
+        });
+
+        // фотогалерея
+        $('.gallery-item a').click(function() {
+            var curLink = $(this);
+            if (curLink.parents().filter('.video-item').length == 0) {
+                var curIndex = $('.gallery-item a').index(curLink);
+                $('.window-gallery').data('curIndex', curIndex);
+                $('body').append('<div class="window-gallery-loading"><div></div><img src="' + curLink.attr('href') + '" /></div>');
+                $('.window-gallery-big img').attr('src', curLink.attr('href'));
+                $('.window-gallery-big img').load(function() {
+                    $('.window-gallery-title').html(curLink.attr('title'));
+                    $('.window-gallery-download a').attr('href', curLink.attr('rel'));
+                    $('.window-gallery-loading').remove();
+                    $('.window').show();
+                    $('.window').css({'margin-top': -$('.window').height() / 2});
+                    $('.window').css({'margin-left': -$('.window').width() / 2});
+                });
+            }
 
             return false;
         });
@@ -193,6 +231,10 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
         // карусель в описании продукции
         $('.product-other').each(function() {
             $(this).data('curIndex', 0);
+            if ($('.product-other-content ul li').length < 5) {
+                $('.product-other-up').hide();
+                $('.product-other-down').hide();
+            }
         });
 
         $('.product-other-up').click(function() {
@@ -301,6 +343,14 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        $('.expert-content-detail-link').click(function() {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+            curLink.parent().parent().find('.expert-content-detail').slideToggle();
+            return false;
+        });
     });
 
 })(jQuery);

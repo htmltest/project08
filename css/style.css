@@ -184,6 +184,10 @@ img {border:none}
 .content table td {text-align:center; font-size:12px; padding:2px 18px; vertical-align:top; border-top:1px solid #d1d1d1; border-left:1px solid #dbdbdb}
 .content table td:first-child {border-left:none; text-align:left; padding:2px 18px 2px 0; border-right:1px solid #b2b2b2; font-size:13px}
 .content hr {margin:9px 0 18px 0; padding:0; display:block; border:none; border-top:1px solid #d9d9d9; height:1px; position:relative; overflow:hidden; background:#e6e6e6; outline:none}
+.content-green h2,
+.content-green h3,
+.content-green h4,
+.content-green h5 {color:#759003}
 
 .content-img-max {float:left; clear:left; margin:0 44px 20px 14px; width:234px; height:237px; position:relative; overflow:hidden; line-height:0}
 .content-img-max-sup {position:absolute; left:0; top:0}
@@ -366,9 +370,9 @@ img {border:none}
 .way:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
 .way-left {float:left; width:291px; padding:35px 0 0 0}
-.way-left-photo {position:relative; width:236px; height:236px; overflow:hidden; margin:0 0 0 14px}
+.way-left-photo {position:relative; width:236px; height:236px; overflow:hidden; margin:0 0 16px 14px}
 .way-left-photo-sup {position:absolute; left:0; top:0}
-.way-left-title {padding:0 0 0 20px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; background:url(../images/li.png) no-repeat 1px 2px; margin-top:46px}
+.way-left-title {margin-top:-16px; padding:0 0 0 20px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; background:url(../images/li.png) no-repeat 1px 2px; margin-top:46px}
 
 .way-content {float:left; width:400px}
 
@@ -480,6 +484,8 @@ img {border:none}
 .expert-btn a {vertical-align:top; display:inline-block; padding:0 17px; height:36px; font:14px/36px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; text-decoration:none; background:url(../images/expert-btn.png); position:relative; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px; -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, .23); -moz-box-shadow:0 2px 5px rgba(0, 0, 0, .23); box-shadow:0 2px 5px rgba(0, 0, 0, .23)}
 .expert-content-right {float:left; width:365px; padding:35px 0 0 0}
 .content h5.expert-hotline {color:#b2b2b2; padding-top:0}
+
+.expert-content-detail {display:none; padding:0 0 16px 0}
 
 .gallery-title {font:24px/26px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px; color:#505050}
 .gallery-inner {margin-right:-20px; position:relative; font-size:0; line-height:0; letter-spacing:-5px; padding:21px 0 0 0}
@@ -680,6 +686,7 @@ img {border:none}
 .window-gallery-big {line-height:0; text-align:center}
 .window-gallery-download {text-align:center; font:11px/18px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; padding:11px 0}
 .window-gallery-download img {vertical-align:middle; margin-right:9px}
+.window-gallery-big iframe {width:560px; height:315px}
 .window-gallery-download a {color:#fff}
 .window-gallery-prev,
 .window-gallery-next {display:block; position:absolute; top:50%; width:25px; height:54px; margin-top:-27px; background:url(../images/window-gallery-arrows.png)}
@@ -809,3 +816,5 @@ img {border:none}
 .profile-menu ul li a:hover,
 .profile-menu ul li.active a {text-decoration:underline}
 .profile-form .content-submit {margin-top:10px}
+
+.window-text {color:#fff; padding:0 0 51px 0}
