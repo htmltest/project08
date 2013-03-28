@@ -707,34 +707,34 @@ img {border:none}
 
 .main-step {position:absolute; left:-60px; top:-15px; width:39px; height:56px; padding:6px 14px 0 9px; text-align:center; color:#fff; font:24px/41px SansRoundedWeb, arial, helvetica, sans-serif; background:url(../images/main-step.png)}
 
-.main-map {position:absolute; left:580px; top:-348px; display:none}
+.main-map {position:absolute; left:580px; top:-348px; opacity:0}
 
-.main-step-1-text {display:none; position:absolute; left:1389px; top:-188px; font-size:18px; line-height:22px; color:#fff; width:265px}
+.main-step-1-text {opacity:0; position:absolute; left:1389px; top:-188px; font-size:18px; line-height:22px; color:#fff; width:265px}
 
 .main-belt {position:absolute; left:0; top:-36px; width:0; height:199px; background:url(../images/main-belt-bg-center.png) no-repeat center; overflow:hidden}
 .main-belt-inner {position:relative; width:2560px; height:198px; background:url(../images/main-belt-bg.png); text-transform:uppercase; color:#fff; text-align:center; letter-spacing:8px; font:30px/188px SansRoundedWeb, arial, helvetica, sans-serif}
 
-.main-step-1-photo-1 {position:absolute; left:901px; top:-374px; opacity:0; margin-top:500px}
-.main-step-1-photo-2 {position:absolute; left:1119px; top:-175px; opacity:0; margin-top:500px}
+.main-step-1-photo-1 {position:absolute; left:901px; top:-374px; opacity:0}
+.main-step-1-photo-2 {position:absolute; left:1119px; top:-175px; opacity:0}
 
-.main-step-2-photo {position:absolute; left:1293px; top:260px; opacity:0; margin-top:500px; width:317px; height:318px; background:url(../images/main-step-2-photo.png)}
-.main-step-2-text {display:none; position:absolute; left:906px; top:341px; font-size:18px; line-height:22px; color:#fff; width:360px}
+.main-step-2-photo {position:absolute; left:1293px; top:260px; opacity:0; width:317px; height:318px; background:url(../images/main-step-2-photo.png)}
+.main-step-2-text {opacity:0; position:absolute; left:906px; top:341px; font-size:18px; line-height:22px; color:#fff; width:360px}
 
 .main-berry-step-2-3 {display:none; position:absolute; left:1393px; top:360px}
 
 .main-step-3-photo {position:absolute; left:905px; top:682px; opacity:0; margin-top:500px}
-.main-step-3-text {display:none; position:absolute; left:1290px; top:816px; font-size:18px; line-height:22px; color:#fff; width:175px}
+.main-step-3-text {opacity:0; position:absolute; left:1290px; top:816px; font-size:18px; line-height:22px; color:#fff; width:175px}
 
 .main-berry-step-3-4 {display:none; position:absolute; left:1005px; top:782px}
 
-.main-step-4-photo {position:absolute; left:1401px; top:1023px; width:317px; height:318px; background:url(../images/main-step-4-photo.png); opacity:0; margin-top:500px}
-.main-step-4-text {position:absolute; left:1097px; top:1096px; font-size:18px; line-height:22px; color:#fff; width:250px; display:none}
+.main-step-4-photo {position:absolute; left:1401px; top:1023px; width:317px; height:318px; background:url(../images/main-step-4-photo.png); opacity:0}
+.main-step-4-text {position:absolute; left:1097px; top:1096px; font-size:18px; line-height:22px; color:#fff; width:250px; opacity:0}
 
 .main-berry-step-4-5 {display:none; position:absolute; left:1401px; top:1023px; width:405px; height:405px; background:url(../images/main-berry-step-4-5.png)}
 
-.main-step-5-photo-1 {position:absolute; left:903px; top:1499px; opacity:0; margin-top:500px}
-.main-step-5-photo-2 {position:absolute; left:1156px; top:1465px; opacity:0; margin-top:500px}
-.main-step-5-text {display:none; position:absolute; left:907px; top:1366px; font-size:18px; line-height:22px; color:#fff; width:380px}
+.main-step-5-photo-1 {position:absolute; left:903px; top:1499px; opacity:0}
+.main-step-5-photo-2 {position:absolute; left:1156px; top:1465px; opacity:0}
+.main-step-5-text {opacity:0; position:absolute; left:907px; top:1366px; font-size:18px; line-height:22px; color:#fff; width:380px}
 
 .main-step-6-text {display:none; position:absolute; left:1389px; top:1568px; font-size:18px; line-height:22px; color:#fff; width:240px}
 .main-map-2 {display:none; position:absolute; left:1022px; top:1890px}
@@ -744,6 +744,7 @@ img {border:none}
 .main-step-7-text {position:absolute; left:1003px; top:2401px; font-size:18px; line-height:22px; color:#fff; width:250px; display:none}
 .main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0; opacity:0; margin-top:500px}
 .main-step-7-video img {display:block}
+.main-step-7-video sup {position:absolute; left:0; top:0; width:347px; height:347px; display:block; background:url(../images/main-step-7-video/main-step-7-video.png)}
 .main-step-7-photo {position:absolute; left:1286px; top:2454px; opacity:0; margin-top:500px}
 
 .main-berry-step-7-8 {display:none; position:absolute; left:1459px; top:2286px}
@@ -751,6 +752,7 @@ img {border:none}
 .main-step-8-text {position:absolute; left:907px; top:2697px; font-size:18px; line-height:22px; color:#fff; width:210px; display:none}
 .main-step-8-video {position:absolute; left:876px; top:2814px; width:261px; height:262px; overflow:hidden; line-height:0; opacity:0; margin-top:500px}
 .main-step-8-video img {display:block}
+.main-step-8-video sup {position:absolute; left:0; top:0; width:261px; height:262px; display:block; background:url(../images/main-step-8-video/main-step-8-video.png)}
 
 .main-step-9-text {position:absolute; left:1293px; top:2989px; font-size:18px; line-height:22px; color:#fff; width:260px; display:none}
 .main-step-9-photo {position:absolute; left:1387px; top:3110px; width:318px; height:318px; background:url(../images/main-step-9-photo.png); opacity:0; margin-top:500px}
