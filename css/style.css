@@ -147,19 +147,23 @@ img {border:none}
 .main-75-text-4 {margin:6px 0 0 75px; line-height:0}
 .main-75-text-5 {font:31px/33px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; letter-spacing:1px; margin:14px 0 0 150px}
 
-.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:192px; top:151px; overflow:hidden}
+.main-gold {display:block; width:277px; height:276px; position:absolute; left:170px; top:151px; overflow:hidden}
+.main-gold img {display:none; position:absolute; left:0; top:0}
+.main-gold img:first-child {display:block}
+
+.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:332px; top:389px; overflow:hidden}
 .main-way-title {display:block; font:21px/25px SansRoundedWeb, arial, helvetica, sans-serif; color:#a20909; text-transform:uppercase; padding:48px 0 0 31px}
 .main-way-text {display:block; font:15px/16px SansRoundedLightWeb, arial, helvetica, sans-serif; padding:3px 0 0 31px}
 
-.main-berry {width:107px; height:322px; position:absolute; left:268px; top:100px; overflow:hidden; line-height:0}
+.main-berry {width:107px; height:322px; position:absolute; left:410px; top:320px; overflow:hidden; line-height:0}
 
-.main-scroll {position:absolute; left:442px; top:394px; color:#fff; font-size:14px; padding:0 0 0 33px; background:url(../images/main-scroll.png) no-repeat 4px center}
+.main-scroll {position:absolute; left:638px; top:486px; color:#fff; font-size:14px; padding:0 0 0 33px; background:url(../images/main-scroll.png) no-repeat 4px center}
 .page-main-loading .main-scroll {display:none}
-.main-auto {position:absolute; display:block; left:442px; top:417px; color:#fff; font-size:14px; line-height:23px; padding:0 0 0 33px; background:url(../images/main-auto.png) no-repeat left center}
+.main-auto {position:absolute; display:block; left:638px; top:509px; color:#fff; font-size:14px; line-height:23px; padding:0 0 0 33px; background:url(../images/main-auto.png) no-repeat left center}
 .page-main-loading .main-auto {display:none}
 .main-auto:hover {color:#fff}
 
-.main-loading {display:none; position:absolute; z-index:10000; left:442px; top:394px; width:44px; height:44px; background:url(../images/fancybox_overlay.png); overflow:hidden}
+.main-loading {display:none; position:absolute; z-index:10000; left:638px; top:486px; width:44px; height:44px; background:url(../images/fancybox_overlay.png); overflow:hidden}
 .main-loading div {width:44px; height:44px; background:url(../images/fancybox_loading.gif) no-repeat center}
 .page-main-loading .main-loading {display:block}
 
@@ -168,6 +172,10 @@ img {border:none}
 .content h2 {margin:0; padding:0 0 18px 0; font:19px/22px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .content p+h2 {padding-top:38px}
 .content h3 {margin:0; padding:0 0 18px 0; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#cf0606; letter-spacing:1px}
+.content p+h3,
+.content ul+h3,
+.content ol+h3,
+.content table+h3 {padding-top:18px}
 .content h4 {margin:0; padding:0 0 18px 0; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; letter-spacing:1px}
 .content h5 {margin:0; padding:18px 0; font:13px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#424242}
 .content h4+h5 {padding-top:0}
@@ -375,6 +383,7 @@ img {border:none}
 .way-left-title {margin-top:-16px; padding:0 0 0 20px; font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#cf0606; text-transform:uppercase; letter-spacing:1px; background:url(../images/li.png) no-repeat 1px 2px; margin-top:46px}
 
 .way-content {float:left; width:400px}
+.way-content h2 {padding-right:30px}
 
 .way-next {float:right; width:192px; margin-right:-10px; padding:52px 0 0 0; position:relative}
 .way-next-title {font:14px/17px SansRoundedWeb, arial, helvetica, sans-serif; color:#cac9c9; letter-spacing:1px; padding:0 0 21px 0}
@@ -801,9 +810,9 @@ img {border:none}
 .main-step-11-text-3 {position:absolute; left:1045px; top:4340px; color:#fff; font:20px/24px SansRoundedWeb, arial, helvetica, sans-serif; width:505px; opacity:0}
 
 .main-step-12-text {position:absolute; left:1388px; top:4525px; font-size:18px; line-height:22px; color:#fff; width:260px; opacity:0}
-.main-step-12-photo {position:absolute; left:885px; top:4472px; width:383px; height:384px; opacity:0; overflow:hidden}
-.main-step-12-photo img {position:relative; left:0; top:0; width:577px; height:384px}
-.main-step-12-photo sup {display:block; position:absolute; left:0; top:0; width:383px; height:384px; background:url(../images/main-step-12-photo.png)}
+.main-step-12-photo {position:absolute; left:885px; top:4472px; opacity:0; width:383px; height:384px; line-height:0; overflow:hidden}
+.main-step-12-photo img {display:block; position:absolute; left:0; top:0; opacity:0}
+.main-step-12-photo img:first-child {opacity:1}
 
 .main-step-13-text {position:absolute; left:1388px; top:4891px; font-size:18px; line-height:22px; color:#fff; width:200px; opacity:0}
 .main-step-13-photo {position:absolute; left:1388px; top:4967px; opacity:0}
