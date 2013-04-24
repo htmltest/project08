@@ -12,7 +12,9 @@
 .content-form-window,
 .search-form,
 .expert-btn a,
-.window-inner {behavior:url(./js/PIE.htc)}
+.window-inner,
+.registration-success,
+.registration-error {behavior:url(./js/PIE.htc)}
 
 .content-submit input  {line-height:36px}
 

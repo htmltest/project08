@@ -68,6 +68,13 @@
                 <!-- content -->
                 <div class="content">
                     <div class="registration-form">
+                        <div class="registration-success">Регистрация прошла успешно</div>
+                        <div class="registration-error">
+                            <div class="registration-error-title">Ошибка Авторизации</div>
+                            <div class="registration-error-item">Поле “<span>Имя</span>” обязательно для заполнения</div>
+                            <div class="registration-error-item">Поле “<span>E-mail</span>” обязательно для заполнения</div>
+                        </div>
+
                         <form action="#" method="post">
                             <div class="registration-form-inner">
                                 <div class="content-input"><input type="text" name="name" value="Введите имя" onfocus="if (this.value == 'Введите имя') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Введите имя'; }" /></div>

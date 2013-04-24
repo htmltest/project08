@@ -281,11 +281,12 @@ img {border:none}
 .window-form .content-submit {height:54px; background:url(../images/content-submit-red.png)}
 .window-form .content-submit input {padding:0 38px 4px 38px; height:54px; background:url(../images/content-submit-red.png) no-repeat right -54px; color:#fff; font:14px/48px SansRoundedWeb, arial, helvetica, sans-serif}
 
-.pager {font-weight:bold; padding:0 0 42px 0}
-.pager a {color:#888; text-decoration:underline; margin:0 4px 0 0}
-.pager a:hover {color:#b2b2b2; text-decoration:none}
-.pager span {color:#b2b2b2; margin:0 4px 0 0}
-.pager a.prev {color:#b2b2b2}
+.pager {padding:0 0 42px 0; line-height:25px}
+.pager a {color:#cf0606; text-decoration:underline; margin:0 18px 0 0; display:inline-block; vertical-align:middle}
+.pager a:hover {color:#cf0606; text-decoration:none}
+.pager span {color:#fff; margin:0 10px 0 -11px; display:inline-block; vertical-align:middle; width:25px; height:25px; background:url(../images/pager.png); text-align:center}
+.pager span:first-child {margin-left:0}
+.pager a.prev {color:#898989}
 
 .registration-form {width:620px; padding:5px 0 0 20px}
 .registration-form-inner {width:364px}
@@ -300,6 +301,12 @@ img {border:none}
 .registration-form-title {margin-top:-12px; padding:0 0 23px 0}
 .registration-form-title .content-link-2 {text-decoration:underline}
 .registration-form-rules {margin-left:-27px; padding:10px 0 12px 0}
+
+.registration-success {border:1px solid #93bc66; width:320px; padding:21px 21px 19px 21px; margin:0 0 21px 0; color:#7eb93b; font-size:16px; line-height:22px; position:relative; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px}
+.registration-error {border:1px solid #cf0606; width:320px; padding:10px 21px 16px 21px; margin:0 0 21px 0; position:relative; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius:10px}
+.registration-error-title {color:#cd090a; font-size:16px; line-height:22px; padding:0 0 7px 0}
+.registration-error-item {font-size:14px; line-height:22px; color:#696969}
+.registration-error-item span {color:#cb0909}
 
 .contacts {width:100%}
 .contacts:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
