@@ -16,6 +16,7 @@ body.page-espresso {background:#000 url(../images/bg-espresso.jpg) no-repeat cen
 body.page-gold-classic {background:#d2a856 url(../images/bg-gold-classic.jpg) center top}
 body.page-green-blend {background:#a2c425 url(../images/bg-green-blend.jpg) center top}
 body.page-montego {background:#b2523f url(../images/bg-montego.jpg) center top}
+body.page-error {background:#c10909 url(../images/bg-catalogue.jpg) center top}
 
 a {color:#cac9c9; outline:none; text-decoration:none}
 a:hover {color:#505050}
@@ -43,6 +44,8 @@ img {border:none}
 .page-gold-strong .wrapper-inner {background:url(../images/bg-gold-strong-inner.png) no-repeat center top}
 .page-green-blend .wrapper-inner {background:url(../images/bg-green-blend-inner.png) no-repeat center top}
 .page-montego .wrapper-inner {background:url(../images/bg-montego-inner.png) no-repeat center top}
+.page-error .wrapper {background:url(../images/bg-error.png) no-repeat center 27px}
+.page-error .wrapper-inner {background:none}
 
 .header {height:300px; position:relative; color:#fff; z-index:2}
 .header-fix {position:fixed; width:940px; left:50%; top:0; margin-left:-470px; z-index:9}
@@ -653,6 +656,7 @@ img {border:none}
 .page-proizvodstvo .footer {max-width:1520px}
 .page-putevoditel .footer {max-width:1400px}
 .page-socotvetstvennost .footer {max-width:1400px}
+.page-error  .footer {max-width:1280px; margin-left:auto; margin-right:auto}
 .footer-inner {width:940px; margin:0 auto; height:270px; position:relative}
 
 .footer-social {width:100%; height:60px; position:relative; z-index:2}
@@ -861,3 +865,11 @@ img {border:none}
 .profile-form .content-submit {margin-top:10px}
 
 .window-text {color:#fff; padding:0 0 51px 0}
+
+.error-505 {background:url(../images/505.png) no-repeat center bottom; text-align:center; margin-top:-165px; padding:0 0 280px 0}
+.error-505-title {font:130px/130px SansRoundedWeb, arial, helvetica, sans-serif; color:#ad0b0e}
+.error-505-text {font:27px/27px SansRoundedWeb, arial, helvetica, sans-serif; color:#3b1000; margin-top:-17px}
+
+.error-404 {background:url(../images/404.png) no-repeat center top; text-align:center; padding:113px 530px 0 140px; margin-top:-216px; height:492px}
+.error-404-title {font:130px/130px SansRoundedWeb, arial, helvetica, sans-serif; color:#ad0b0e}
+.error-404-text {font:27px/24px SansRoundedWeb, arial, helvetica, sans-serif; color:#3b1000; margin-top:-17px}
