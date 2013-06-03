@@ -362,6 +362,99 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             curLink.parent().parent().find('.expert-content-detail').slideToggle();
             return false;
         });
+
+        $('.product-press-more-link a').click(function() {
+            $(this).parent().hide();
+            $('.product-press-more').slideDown();
+            return false;
+        });
+
+        $('.product-video-ctrl a').click(function() {
+            var curLi = $(this).parent();
+            if (!curLi.hasClass('active')) {
+                var curIndex = $('.product-video-ctrl li').index(curLi);
+                $('.product-video-ctrl li').removeClass('active');
+                curLi.addClass('active');
+                if (curIndex == 0) {
+                    $('.product-video-play').html('<iframe width="605" height="360" src="http://www.youtube.com/embed/ryb21KEyYBw" frameborder="0" allowfullscreen></iframe>');
+                    $('.product-video-play').show();
+                    $('.product-video-frames').hide();
+                } else {
+                    $('.product-video-play').hide();
+                    $('.product-video-play').html('1');
+                    $('.product-video-frames').show();
+                }
+            }
+            return false;
+        });
+
+        $('.product-video-frames-list').each(function() {
+            var curSlider = $(this);
+            curSlider.data('curIndex', 0);
+            curSlider.data('disableAnimation', false);
+            curSlider.find('ul').width(curSlider.find('li').length * 605);
+            $('.product-video-frames-prev').hide();
+        });
+
+        $('.product-video-frames-next').click(function() {
+            var curSlider = $('.product-video-frames-list');
+            if (!curSlider.data('disableAnimation')) {
+                curSlider.data('disableAnimation', true);
+
+                $('.product-video-frames-detail-item').hide()
+
+                var curIndex = curSlider.data('curIndex');
+                curIndex++;
+                $('.product-video-frames-prev').show();
+                if (curIndex == curSlider.find('li').length) {
+                    curIndex = curSlider.find('li').length - 1;
+                }
+                if (curIndex == curSlider.find('li').length - 1) {
+                    $('.product-video-frames-next').hide();
+                }
+                curSlider.data('curIndex', curIndex);
+                curSlider.find('ul').animate({'left': -curIndex * 605}, function() {
+                    curSlider.data('disableAnimation', false);
+                });
+            }
+            return false;
+        });
+
+        $('.product-video-frames-prev').click(function() {
+            var curSlider = $('.product-video-frames-list');
+            if (!curSlider.data('disableAnimation')) {
+                curSlider.data('disableAnimation', true);
+
+                $('.product-video-frames-detail-item').hide()
+
+                var curIndex = curSlider.data('curIndex');
+                curIndex--;
+                $('.product-video-frames-next').show();
+                if (curIndex == -1) {
+                    curIndex = 0;
+                }
+                if (curIndex == 0) {
+                    $('.product-video-frames-prev').hide();
+                }
+                curSlider.data('curIndex', curIndex);
+                curSlider.find('ul').animate({'left': -curIndex * 605}, function() {
+                    curSlider.data('disableAnimation', false);
+                });
+            }
+            return false;
+        });
+
+        $('.product-video-frames-list a').click(function() {
+            var curIndex = $('.product-video-frames-list a').index($(this));
+            if ($('.product-video-frames-detail-item:eq(' + curIndex + ')').css('display') == 'block') {
+                $('.product-video-frames-detail-item').hide();
+            } else {
+                $('.product-video-frames-detail-item').hide();
+                $('.product-video-frames-detail-item').eq(curIndex).show();
+            }
+            return false;
+        });
+
     });
 
 })(jQuery);

@@ -14,7 +14,8 @@
 .expert-btn a,
 .window-inner,
 .registration-success,
-.registration-error {behavior:url(./js/PIE.htc)}
+.registration-error,
+.product-video {behavior:url(./js/PIE.htc)}
 
 .content-submit input  {line-height:36px}
 
