@@ -18,6 +18,7 @@ body.page-green-blend {background:#a2c425 url(../images/bg-green-blend.jpg) cent
 body.page-montego {background:#b2523f url(../images/bg-montego.jpg) center top}
 body.page-error {background:#c10909 url(../images/bg-catalogue.jpg) center top}
 body.page-gold-video {background:#d2a856 fixed url(../images/bg-gold-classic.jpg) center top}
+body.page-recipes {background:#c10909 url(../images/bg-recepies.jpg) center top}
 
 a {color:#cac9c9; outline:none; text-decoration:none}
 a:hover {color:#505050}
@@ -48,6 +49,7 @@ img {border:none}
 .page-error .wrapper {background:url(../images/bg-error.png) no-repeat center 27px}
 .page-error .wrapper-inner {background:none}
 .page-gold-video .wrapper-inner {background:url(../images/bg-gold-video-inner.png) no-repeat center top}
+.page-recipes .wrapper {background:none}
 
 .header {height:300px; position:relative; color:#fff; z-index:2}
 .header-fix {position:fixed; width:940px; left:50%; top:0; margin-left:-470px; z-index:9}
@@ -88,6 +90,8 @@ img {border:none}
 .header-section ul {margin:0; padding:18px 0 0 0; list-style:none; width:100%; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-section ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .header-section ul li {float:left; margin:0 40px 0 0; padding:0; position:relative}
+
+.page-recipes .header-section {left:-7px; top:141px; background:url(../images/header-section-recipes.png) no-repeat left 22px; padding:0 0 0 155px; min-height:175px}
 
 .header-profile {position:absolute; left:47px; top:138px}
 .header-profile-photo {float:left; width:138px; height:155px; position:relative; line-height:0; overflow:hidden}
@@ -382,8 +386,8 @@ img {border:none}
 .news-item-link a {color:#b4b4b4}
 .news-item-link a:hover {color:#505050}
 
-.recipes-category {width:100%; position:relative; font-size:0; line-height:0; letter-spacing:-1px; padding:53px 0 0 0}
-.recipes-item {display:inline-block; vertical-align:top; width:215px; padding:0 45px 30px 45px; position:relative; display:inline!ie; zoom:1}
+.recipes-category {width:100%; position:relative; font-size:0; line-height:0; letter-spacing:-1px; padding:60px 0 0 0}
+.recipes-item {display:inline-block; vertical-align:top; width:215px; padding:0 0 30px 90px; position:relative; display:inline!ie; zoom:1}
 .recipes-photo {width:215px; height:216px; position:relative; overflow:hidden; line-height:0}
 .recipes-photo-sup {position:absolute; left:0; top:0}
 .recipes-item-inner {padding:32px 0 0 13px}
@@ -953,3 +957,5 @@ img {border:none}
 .product-press-more-link a,
 .product-press-more-link a:hover {color:#fff}
 .product-press-more-link img {vertical-align:middle}
+
+.recipes-text {font:18px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; color:#000; padding:0 0 0 145px; margin-top:-10px}
