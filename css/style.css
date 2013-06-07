@@ -577,6 +577,7 @@ img {border:none}
 .product-other-down {display:block; margin:0 auto 0 auto; width:27px; height:15px; background:url(../images/product-slider-arrows.png) no-repeat -27px -15px}
 .product-other-down.disabled {background-position:-27px top; cursor:default}
 
+.page-product-flash .product > img {display:none}
 .product-3in1-classic {position:absolute; left:96px; top:14px}
 .product-3in1-caramel {position:absolute; left:163px; top:16px}
 .product-alta-rica {position:absolute; left:174px; top:-45px}
@@ -959,3 +960,7 @@ img {border:none}
 .product-press-more-link img {vertical-align:middle}
 
 .recipes-text {font:18px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; color:#000; padding:0 0 0 145px; margin-top:-10px}
+
+#product-flash {position:relative; overflow:hidden}
+.product-flash-wrap {position:absolute; left:-40px; top:41px; width:1091px; height:836px; z-index:-1; overflow:hidden}
+.page-product-flash .wrapper-inner {background:url(../images/bg-product-flash.png) no-repeat center top}

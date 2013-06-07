@@ -11,6 +11,7 @@
         <![endif]-->
 
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/swfobject.js"></script>
         <script type="text/javascript" src="js/tools.js"></script>
     </head>
 
@@ -69,6 +70,19 @@
 
                 <!-- product -->
                 <div class="product">
+                    <div class="product-flash-wrap" style="top:39px"><div id="product-flash"></div></div>
+                    <script type="text/javascript">
+                        if (swfobject.hasFlashPlayerVersion('11.7.700')) {
+                            var flashvars = {};
+                            var params = {
+                                wmode: "opaque"
+                            };
+                            var attributes = {};
+
+                            $('body').addClass('page-product-flash');
+                            swfobject.embedSWF("flash/gold mild.swf", "product-flash", "1091", "836", "9.0.0", "flash/expressInstall.swf", flashvars, params, attributes);
+                        }
+                    </script>
 
                     <img src="images/catalogue-03-max.png" alt="" width="737" height="846" class="product-gold-classic" />
 
