@@ -962,5 +962,5 @@ img {border:none}
 .recipes-text {font:18px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; color:#000; padding:0 0 0 145px; margin-top:-10px}
 
 #product-flash {position:relative; overflow:hidden}
-.product-flash-wrap {position:absolute; left:-40px; top:41px; width:1091px; height:836px; z-index:-1; overflow:hidden}
+.product-flash-wrap {position:absolute; left:-40px; top:41px; width:1089px; height:836px; z-index:-1; overflow:hidden}
 .page-product-flash .wrapper-inner {background:url(../images/bg-product-flash.png) no-repeat center top}
