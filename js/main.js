@@ -1003,6 +1003,10 @@ var timerScroll;
         animStep8Video();
         animMainStep9Photo();
         animMainStep14Photo();
+        var curURL = location.href;
+        if (curURL.indexOf('autoplay', 0) != -1) {
+            $('.main-auto').trigger('click');
+        }
     });
 
 })(jQuery);
