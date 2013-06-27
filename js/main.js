@@ -117,7 +117,7 @@ var timerScroll;
     });
 
     function nextScroll() {
-        curAutoScroll += 2;
+        curAutoScroll += 8;
         $.scrollTo(curAutoScroll, {duration: 0});
         if ($(window).scrollTop() + $(window).height() < $('.wrapper').height()) {
             timerScroll = window.setTimeout(nextScroll, 10);
@@ -657,8 +657,8 @@ var timerScroll;
             $('.main-step-11-photo-1').css({'opacity': 0});
         }
 
-        if (curScroll + curHeight > 5166) {
-            curRate = (curScroll + curHeight - 5166) / (curHeight / 2);
+        if (curScroll + curHeight > 5466) {
+            curRate = (curScroll + curHeight - 5466) / (curHeight / 2);
             if (curRate > 1) {
                 curRate = 1;
             }
@@ -667,8 +667,8 @@ var timerScroll;
             $('.main-step-11-arrow-left').css({'height': 0});
         }
 
-        if (curScroll + curHeight > 5170) {
-            curRate = (curScroll + curHeight - 5170) / (curHeight / 2);
+        if (curScroll + curHeight > 5470) {
+            curRate = (curScroll + curHeight - 5470) / (curHeight / 2);
             if (curRate > 1) {
                 curRate = 1;
             }

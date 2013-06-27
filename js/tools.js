@@ -455,6 +455,10 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        $('.catalogue-rubric-1 a img, .catalogue-rubric-2 a img, .catalogue-rubric-3 a img, .catalogue-rubric-4 a img').load(function() {
+            $(this).parent().css({'background': 'none'});
+        });
+
     });
 
 })(jQuery);

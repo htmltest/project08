@@ -527,6 +527,10 @@ img {border:none}
 .catalogue-rubric-title {padding:0 0 0 75px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; color:#e0e0e0; text-transform:uppercase}
 .catalogue-rubric-1 {width:1032px; padding:0 0 11px 248px; margin:0 0 -9px -170px; background:url(../images/catalogue-rubric-1.png) no-repeat center bottom; line-height:0}
 .catalogue-rubric-1:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.catalogue-rubric-1 a,
+.catalogue-rubric-2 a,
+.catalogue-rubric-3 a,
+.catalogue-rubric-4 a {background:url(../images/fancybox_loading.gif) no-repeat center}
 .catalogue-item-01 {float:left; margin:13px 0 0 0}
 .catalogue-item-02 {float:left; margin:4px 0 0 -23px}
 .catalogue-item-03 {float:left; margin:3px 0 0 -29px}
