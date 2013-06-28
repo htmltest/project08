@@ -531,25 +531,25 @@ img {border:none}
 .catalogue-rubric-2 a,
 .catalogue-rubric-3 a,
 .catalogue-rubric-4 a {background:url(../images/fancybox_loading.gif) no-repeat center}
-.catalogue-item-01 {float:left; margin:13px 0 0 0}
-.catalogue-item-02 {float:left; margin:4px 0 0 -23px}
-.catalogue-item-03 {float:left; margin:3px 0 0 -29px}
-.catalogue-item-04 {float:left; margin:3px 0 0 -28px}
-.catalogue-item-05 {float:left; margin:4px 0 0 -29px}
-.catalogue-item-06 {float:left; margin:0 0 0 -16px}
+.catalogue-item-01 {float:left; margin:13px 0 0 0; min-width:113px; min-height:140px}
+.catalogue-item-02 {float:left; margin:4px 0 0 -23px; min-width:124px; min-height:154px}
+.catalogue-item-03 {float:left; margin:3px 0 0 -29px; min-width:124px; min-height:155px}
+.catalogue-item-04 {float:left; margin:3px 0 0 -28px; min-width:124px; min-height:155px}
+.catalogue-item-05 {float:left; margin:4px 0 0 -29px; min-width:124px; min-height:153px}
+.catalogue-item-06 {float:left; margin:0 0 0 -16px; min-width:137px; min-height:161px}
 .catalogue-rubric-2 {width:445px; padding:0 0 0 215px; margin:0 0 9px -143px; background:url(../images/catalogue-rubric-2.png) no-repeat center bottom; line-height:0}
 .catalogue-rubric-2:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.catalogue-item-07 {float:left; margin:8px 0 0 0}
-.catalogue-item-08 {float:left; margin:8px 0 0 -20px}
+.catalogue-item-07 {float:left; margin:8px 0 0 0; min-width:125px; min-height:158px}
+.catalogue-item-08 {float:left; margin:8px 0 0 -20px; min-width:102px; min-height:158px}
 .catalogue-rubric-3 {width:665px; padding:0 0 12px 122px; margin:0 0 9px -38px; background:url(../images/catalogue-rubric-3.png) no-repeat center bottom; line-height:0; position:relative; z-index:2}
 .catalogue-rubric-3:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.catalogue-item-09 {float:left; margin:23px 0 0 0}
-.catalogue-item-10 {float:left; margin:23px 0 0 -3px}
-.catalogue-item-11 {float:left; margin:23px 0 0 -3px}
-.catalogue-item-12 {float:left; margin:22px 0 0 -8px}
+.catalogue-item-09 {float:left; margin:23px 0 0 0; min-width:99px; min-height:114px}
+.catalogue-item-10 {float:left; margin:23px 0 0 -3px; min-width:99px; min-height:114px}
+.catalogue-item-11 {float:left; margin:23px 0 0 -3px; min-width:99px; min-height:114px}
+.catalogue-item-12 {float:left; margin:22px 0 0 -8px; min-width:99px; min-height:114px}
 .catalogue-rubric-4 {width:100%; padding:0 0 89px 0}
 .catalogue-rubric-4:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.catalogue-item-13 {float:left; margin:-80px 0 0 14px}
+.catalogue-item-13 {float:left; margin:-80px 0 0 14px; min-width:240px; min-height:377px}
 .catalogue .header-test {left:652px; top:auto; bottom:50px}
 
 .catalogue-recipes {position:absolute; left:596px; top:498px; width:225px}
