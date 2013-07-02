@@ -791,7 +791,7 @@ img {border:none}
 .main-berry-step-5-7 {display:none; position:absolute; left:903px; top:1499px}
 
 .main-step-7-text {position:absolute; left:1003px; top:2401px; font-size:18px; line-height:22px; color:#fff; width:250px; opacity:0}
-.main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0; opacity:0}
+.main-step-7-video {position:absolute; left:1359px; top:2186px; width:347px; height:347px; overflow:hidden; line-height:0}
 .main-step-7-video img {display:block; position:relative; left:1px; top:0}
 .main-step-7-video sup {position:absolute; left:0; top:0; width:347px; height:347px; display:block; background:url(../images/main-step-7-video/main-step-7-video.png)}
 .main-step-7-photo {position:absolute; left:1286px; top:2454px; opacity:0}
