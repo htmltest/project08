@@ -182,7 +182,7 @@ var timerScroll;
             }
         }
 
-        $('.main-75').css({'margin-right': -curScroll, 'margin-top': -curScroll});
+        $('.main-banner-animation').css({'margin-right': -curScroll, 'margin-top': -curScroll});
         $('.main-gold, .main-gold-btn').css({'margin-left': -curScroll, 'margin-top': -curScroll * 2.5});
         $('.main-way').css({'margin-left': -curScroll, 'margin-top': -curScroll * 2.5});
         $('.main-scroll').css({'margin-left': -curScroll, 'margin-top': -curScroll * 2.5});

@@ -159,6 +159,8 @@ img {border:none}
 .main-75-text-4 {margin:6px 0 0 75px; line-height:0}
 .main-75-text-5 {font:31px/33px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; letter-spacing:1px; margin:14px 0 0 150px}
 
+.main-vk {display:block; position:absolute; right: 0px; top: -182px; width: 546px; height: 530px; background: url('../images/site_nescafe_banner.png'); overflow:hidden; text-decoration:none; cursor:pointer}
+
 .main-gold {display:block; width:277px; height:276px; position:absolute; left:170px; top:151px; overflow:hidden}
 .main-gold img {display:none; position:absolute; left:0; top:0}
 .main-gold img:first-child {display:block}
