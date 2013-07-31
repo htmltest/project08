@@ -161,6 +161,15 @@ img {border:none}
 
 .main-vk {display:block; position:absolute; right: 0px; top: -182px; width: 546px; height: 530px; background: url('../images/site_nescafe_banner.png'); overflow:hidden; text-decoration:none; cursor:pointer}
 
+.main-sun {display:block; position:absolute; right:0; top:-182px; width:526px; height:533px; overflow:hidden; cursor:pointer; text-decoration:none}
+.main-sun-bg-1 {display:block; position:absolute; left:0; top:0; width:526px; height:533px; overflow:hidden; line-height:0}
+.main-sun-bg-1 img {position:absolute; left:0; top:0}
+.main-sun-bg-2 {display:none; position:absolute; left:0; top:0; width:526px; height:533px; overflow:hidden; line-height:0}
+.main-sun-bg-2 img {position:absolute; left:0; top:-533px}
+.main-sun-hand {display:block; position:absolute; right:2px; bottom:2px; width:202px; height:430px; background:url(../images/main-sun-hand.png)}
+.main-sun-text-1 {display:block; position:absolute; left:0; top:0; width:526px; height:533px; background:url(../images/main-sun-text.png)}
+.main-sun-text-2 {display:none; position:absolute; left:0; top:0; width:526px; height:533px; background:url(../images/main-sun-text.png) left -533px}
+
 .main-gold {display:block; width:277px; height:276px; position:absolute; left:170px; top:151px; overflow:hidden}
 .main-gold img {display:none; position:absolute; left:0; top:0}
 .main-gold img:first-child {display:block}

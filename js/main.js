@@ -1109,4 +1109,19 @@ var timerScroll;
         }
     });
 
+    $(document).ready(function() {
+        var mainSunSpeed = 4000;
+
+        $('.main-sun').each(function() {
+            $('.main-sun-bg-1 img').attr('src', $('.main-sun-bg-1 img').attr('src'));
+            $('.main-sun-bg-1 img').load(function() {
+                window.setTimeout(function() {
+                    $('.main-sun-text-1').fadeOut(mainSunSpeed / 2, 'linear');
+                    $('.main-sun-text-2').fadeIn(mainSunSpeed / 2, 'linear');
+                }, mainSunSpeed / 2);
+                $('.main-sun-bg-2').fadeIn(mainSunSpeed);
+            });
+        });
+    });
+
 })(jQuery);
