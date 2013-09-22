@@ -979,3 +979,33 @@ img {border:none}
 #product-flash {position:relative; overflow:hidden}
 .product-flash-wrap {position:absolute; left:-40px; top:41px; width:1089px; height:836px; z-index:-1; overflow:hidden}
 .page-product-flash .wrapper-inner {background:url(../images/bg-product-flash.png) no-repeat center top}
+
+.promo-header-photo {position:absolute; left:-26px; top:153px; width:414px; height:418px; background:#fff; line-height:418px; text-align:center; overflow:hidden}
+.promo-header-photo img {vertical-align:middle}
+.promo-header-photo sup {display:block; width:414px; height:418px; position:absolute; left:0; top:0; background:url(../images/promo-header-photo.png)}
+
+.promo-header {position:absolute; left:394px; top:170px}
+.promo-header table {width:540px; border:none; border-collapse:collapse; margin:0}
+.promo-header table td {padding:0; vertical-align:middle; height:300px}
+.promo-header h1 {margin:0; padding:0; font:34px/34px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:1px}
+.promo-header-place {color:#cfa06f; font-size:12px; line-height:15px; padding:4px 0 0 0}
+.promo-header-date {color:#cfa06f; font-size:12px; line-height:15px}
+.promo-header-anonce {color:#fff; font-size:16px; line-height:22px; font-weight:bold; padding:7px 0 0 0}
+.promo-header-hint {color:#fff; font-size:12px; line-height:15px; font-weight:bold; padding:27px 0 0 0}
+
+.promo-archive {font:15px/20px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; margin:-60px 0 0 205px; position:relative; z-index:9}
+.promo-archive-title {color:#cf0606}
+.promo-archive-links a {color:#c6c6c6; text-decoration:none; margin:0 9px 0 0}
+.promo-archive-links a:hover {text-decoration:underline}
+.promo-archive-links a.active {text-decoration:underline; color:#424242}
+
+.promo-list {font-size:0; line-height:0; letter-spacing:-5px; margin:12px 0 0 -6px; position:relative}
+.promo-item {display:inline-block; padding:0 18px 60px 0; vertical-align:top; position:relative; width:450px; display:inline!ie; zoom:1!ie}
+.promo-img {float:left; width:176px; height:180px; position:relative; background:#fff; text-align:center; line-height:180px; overflow:hidden}
+.promo-img img {vertical-align:middle}
+.promo-img sup {position:absolute; left:0; top:0; display:block; width:176px; height:180px; background:url(../images/promo-item-img.png)}
+.promo-item-active .promo-img sup {background-position:left -180px}
+.promo-item-inner {float:right; width:240px; padding:10px 0 0 0}
+.promo-item-place {color:#cfa06f; font-size:12px; line-height:18px; margin:-19px 0 0 0; letter-spacing:0; font-weight:bold}
+.promo-item-date {color:#cfa06f; font-size:12px; line-height:18px; letter-spacing:0; font-weight:bold}
+.promo-item-anonce {font-size:12px; line-height:16px; letter-spacing:0; padding:3px 0 0 0}
