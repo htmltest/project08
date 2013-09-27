@@ -1002,10 +1002,13 @@ img {border:none}
 .promo-list {font-size:0; line-height:0; letter-spacing:-5px; margin:12px 0 0 -6px; position:relative}
 .promo-item {display:inline-block; padding:0 18px 60px 0; vertical-align:top; position:relative; width:450px; display:inline!ie; zoom:1!ie}
 .promo-img {float:left; width:176px; height:180px; position:relative; background:#fff; text-align:center; line-height:180px; overflow:hidden}
+.promo-img a {position:relative; cursor:pointer; display:block; width:176px; height:180px}
 .promo-img img {vertical-align:middle}
 .promo-img sup {position:absolute; left:0; top:0; display:block; width:176px; height:180px; background:url(../images/promo-item-img.png)}
 .promo-item-active .promo-img sup {background-position:left -180px}
 .promo-item-inner {float:right; width:240px; padding:10px 0 0 0}
+.promo-item-inner h3 a {color:#cf0606}
+.promo-item-inner h3 a:hover {color:#505050}
 .promo-item-place {color:#cfa06f; font-size:12px; line-height:18px; margin:-19px 0 0 0; letter-spacing:0; font-weight:bold}
 .promo-item-date {color:#cfa06f; font-size:12px; line-height:18px; letter-spacing:0; font-weight:bold}
 .promo-item-anonce {font-size:12px; line-height:16px; letter-spacing:0; padding:3px 0 0 0}
