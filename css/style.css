@@ -602,7 +602,7 @@ img {border:none}
 .product-classic {position:absolute; left:200px; top:-71px}
 .product-espresso {position:absolute; left:98px; top:-155px}
 .product-gold-classic {position:absolute; left:128px; top:-113px}
-.product-gold-barista {position:absolute; left:329px; top:53px}
+.product-gold-barista {position:absolute; left:329px; top:118px}
 .product-green-blend {position:absolute; left:129px; top:-94px}
 .product-montego {position:absolute; left:56px; top:-59px}
 
@@ -619,6 +619,8 @@ img {border:none}
 .product-text a:hover {color:#fff}
 
 .product-text-barista {text-transform:uppercase; color:#d9230b; font:15px/20px SansRoundedWeb, arial, helvetica, sans-serif; padding:34px 0 0 0; white-space:nowrap}
+.product-text-barista a,
+.product-text-barista a:hover {color:#d9230b}
 .product-text-barista img {vertical-align:middle; margin:0 0 2px 3px}
 
 .product-links {position:absolute; left:749px; top:440px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px}
