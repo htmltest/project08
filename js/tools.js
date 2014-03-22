@@ -459,6 +459,37 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             $(this).parent().css({'background': 'none'});
         });
 
+        // gold poll
+        $('.gold-3-poll-item span input:checked').parent().addClass('checked');
+        $('.gold-3-poll-item div').click(function() {
+            var curName = $(this).find('span input').attr('name');
+            $('.gold-3-poll-item span input[name="' + curName + '"]').parent().removeClass('checked');
+            $(this).find('span').addClass('checked');
+            $(this).find('span input').prop('checked', true).trigger('change');
+        });
+
+        $('.gold-3-poll-form form').submit(function() {
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                dataType: 'html',
+                cache: false
+            }).done(function(html) {
+                $('.gold-3-poll-container').html(html);
+                $('.gold-3-result').each(function() {
+                    var curBlock = $(this);
+                    var curWidth = curBlock.find('.gold-3-result-line div').width() + 10;
+                    var newWidth = curBlock.find('.gold-3-result-line').width() * Number(curBlock.find('.gold-3-result-text span').html()) / 100;
+                    if (curWidth > newWidth) {
+                        newWidth = curWidth;
+                    }
+                    curBlock.find('.gold-3-result-line div').animate({'width': newWidth}, 1500);
+                });
+            });
+            return false;
+        });
+
     });
 
 })(jQuery);

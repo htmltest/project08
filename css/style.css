@@ -913,6 +913,8 @@ img {border:none}
 .gold-video {width:611px; margin:56px 0 0 133px}
 .gold-video-title {text-align:right; line-height:0}
 .gold-video-title-2 {padding:0 0 4px 0}
+.gold-video-title-3-1 {text-align:left; padding:0 0 13px 43px}
+.gold-video-title-3-2 {text-align:left; padding:24px 0 0 43px}
 .product-video {position:relative; padding:3px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px; background:url(../images/product-video-bg.png)}
 .product-video-play {position:relative; width:605px; height:360px}
 .product-video-frames {display:none; width:605px; height:360px; position:relative}
@@ -995,6 +997,30 @@ img {border:none}
 .gold-2-link {text-align:center; color:#fff; text-transform:uppercase; font:16px/21px SansRoundedWeb, arial, helvetica, sans-serif; padding:7px 0 156px 0}
 .gold-2-link a {color:#fff}
 .gold-2-link img {vertical-align:middle; margin:0 0 0 7px; position:relative; top:-1px}
+
+.gold-3-poll {padding:38px 0 150px 40px}
+.gold-3-poll-title {color:#fff; text-transform:uppercase; font:18px/21px SansRoundedWeb, arial, helvetica, sans-serif}
+.gold-3-poll-form {padding:15px 0 0 20px}
+.gold-3-poll-form form {margin:0; padding:0}
+.gold-3-poll-item {width:100%; padding:19px 0 0 0}
+.gold-3-poll-item:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.gold-3-poll-item div {float:left; position:relative; padding:0 0 0 47px; cursor:pointer; color:#fff; font:22px/25px SansRoundedWeb, arial, helvetica, sans-serif}
+.gold-3-poll-item div span {position:absolute; left:0; top:0; width:25px; height:25px; display:block; overflow:hidden; background:url(../images/gold-poll-radio.png)}
+.gold-3-poll-item div span.checked {background-position:left -25px}
+.gold-3-poll-item div span input {position:absolute; left:-99px; top:-99px}
+.gold-3-poll-submit {position:relative; margin:38px 0 0 -9px}
+.gold-3-poll-submit input {vertical-align:top; margin:0; padding:0; outline:none; width:135px; height:54px; border:none; background:url(../images/gold-poll-submit.png); cursor:pointer}
+.gold-3-poll-submit input:hover {background-position:left -54px}
+
+.gold-3-results {padding:23px 0 0 0}
+.gold-3-result {padding:0 0 17px 0}
+.gold-3-result-title {font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; padding:0 0 7px 26px}
+.gold-3-result-value {width:100%}
+.gold-3-result-value:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.gold-3-result-line {float:left; position:relative; width:484px; border:1px solid #fdfaf3; background:#e8b551; height:28px; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px; overflow:hidden}
+.gold-3-result-line div {height:28px; position:absolute; text-align:center; color:#fff; font:14px/28px SansRoundedWeb, arial, helvetica, sans-serif; background:#b31303 url(../images/gold-3-result-line.png)}
+.gold-3-result-line div:after {display:block; content:""; width:9px; height:28px; position:absolute; right:-9px; top:0; background:url(../images/gold-3-result-line-end.png)}
+.gold-3-result-text {float:left; font:14px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 0 13px; color:#241204}
 
 .recipes-text {font:18px/24px SansRoundedLightWeb, arial, helvetica, sans-serif; color:#000; padding:0 0 0 145px; margin-top:-10px}
 
