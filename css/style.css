@@ -5,9 +5,10 @@
 html {height:100%; min-width:1000px}
 
 body {height:100%; min-width:1000px; margin:0; padding:0; font:13px/16px arial, helvetica, sans-serif; color:#424242; background:#fff url(../images/bg-wrap.png) repeat-y center top}
-body.page-main {background:#c10909 url(../images/bg-main.jpg) no-repeat center top}
+body.page-main {background:#de2926 url(../images/bg-main.jpg) no-repeat center top}
+body.page-animation {background:#c10909 url(../images/bg-animation.jpg) no-repeat center top}
 body.page-main-loading {overflow:hidden}
-body.page-expert {background:#fff url(../images/bg-expert.png) center top}
+body.page-expert {background:#c10909 url(../images/bg-expert.png) no-repeat center top}
 body.page-catalogue {background:#c10909 url(../images/bg-catalogue.jpg) center top}
 body.page-3in1 {background:#d59154 url(../images/bg-3in1.jpg) center top}
 body.page-alta-rica {background:#9c3f8f url(../images/bg-alta-rica.jpg) center top}
@@ -20,6 +21,7 @@ body.page-montego {background:#b2523f url(../images/bg-montego.jpg) center top}
 body.page-error {background:#c10909 url(../images/bg-catalogue.jpg) center top}
 body.page-gold-video {background:#d2a856 fixed url(../images/bg-gold-classic.jpg) center top}
 body.page-recipes {background:#c10909 url(../images/bg-recepies.jpg) center top}
+body.page-proizvodstvo {background-color:#c10909; background-position:center bottom}
 
 a {color:#cac9c9; outline:none; text-decoration:none}
 a:hover {color:#505050}
@@ -27,14 +29,15 @@ a:hover {color:#505050}
 img {border:none}
 
 .wrapper {min-width:1000px; min-height:100%; width:100%; position:relative; overflow:hidden; background:url(../images/bg.jpg) no-repeat center top}
-.page-expert .wrapper {background:none}
+.page-expert .wrapper {background:url(../images/bg-main-bottom.png) no-repeat center bottom}
 .page-main .wrapper {background:url(../images/bg-main-bottom.png) no-repeat center bottom}
+.page-catalogue .wrapper {background:url(../images/bg-main-bottom.png) no-repeat center bottom}
+.page-animation .wrapper {background:url(../images/bg-main-bottom.png) no-repeat center bottom}
 .page-proizvodstvo .wrapper {background:url(../images/bg-proizvodstvo.jpg) no-repeat center top}
 .page-putevoditel .wrapper {background:url(../images/bg-putevoditel.jpg) no-repeat center top}
 .page-socotvetstvennost .wrapper {background:url(../images/bg-socotvetstvennost.jpg) no-repeat center top}
-.page-catalogue .wrapper {background:url(../images/bg-catalogue-footer.png) no-repeat center bottom}
-.wrapper-inner {width:940px; padding:0 0 312px 0; margin:0 auto; word-wrap:break-word}
-.page-catalogue .wrapper-inner {width:auto; background:url(../images/bg-catalogue-inner.png) no-repeat center top; padding:0 0 270px 0}
+.wrapper-inner {width:940px; padding:0 0 460px 0; margin:0 auto; word-wrap:break-word}
+.page-catalogue .wrapper-inner {width:auto; background:url(../images/bg-catalogue-inner.png) no-repeat center top; padding:0 0 460px 0}
 .page-3in1 .wrapper-inner {background:url(../images/bg-3in1-inner.png) no-repeat center top}
 .page-3in1-2 .wrapper-inner {background:url(../images/bg-3in1-inner-2.png) no-repeat center top}
 .page-3in1-3 .wrapper-inner {background:url(../images/bg-3in1-inner-3.png) no-repeat center top}
@@ -66,28 +69,27 @@ img {border:none}
 
 .logo {position:absolute; left:9px; top:20px; line-height:0}
 
-.header-ctrl {position:absolute; right:0; top:26px}
+.header-ctrl {position:absolute; right:0; top:0}
 
-.header-search {float:right; width:161px; height:21px; background:url(../images/header-search.png); position:relative}
-.header-search form {margin:0; padding:0}
-.header-search-input {position:absolute; left:0; top:0; width:135px}
-.header-search-input input {width:125px; padding:0 0 0 10px; vertical-align:top; border:none; background:none; text-align:right; color:#4a4a4a; font:14px/20px arial, helvetica, sans-serif; height:21px; outline:none; margin:0}
-.header-search-submit {position:absolute; right:7px; top:4px}
-.header-search-submit input {vertical-align:top; width:12px; height:12px; cursor:pointer; border:none; background:url(../images/header-search-submit.png); margin:0; padding:0; outline:none}
+.header-ctrl-link {float:right; font-size:12px; line-height:18px; padding:8px 0 0 17px}
 
-.header-user-link {float:right; padding:0 10px; font-size:14px; line-height:21px}
+.header-help-link {float:right; line-height:0; padding:25px 0 0 21px}
+.header-search-link {float:right; line-height:0; padding:25px 0 0 0}
 
 .header-menu {position:absolute; right:0; top:59px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-menu ul {float:right; margin:0; padding:0; list-style:none}
 .header-menu ul li {float:left; margin:0 0 0 28px; padding:0; position:relative}
 .header-menu ul li ul {position:absolute; left:0; top:24px; font-size:12px; white-space:nowrap}
 .header-menu ul li ul li {margin:0 27px 0 0; float:none; display:inline-block}
-
-.header-expert-link {position:absolute; right:0; top:90px; font-size:14px; padding:0 0 0 15px; background:url(../images/header-expert-link.png) no-repeat left center}
+.header-menu ul li em {font-style:normal; font-family:webfontregular, arial, helvetica, sans-serif}
+.header-menu ul li span {font-size:9px; position:relative; top:-4px}
 
 .header-section {position:absolute; left:48px; top:141px; padding:0 0 0 162px; background:url(../images/header-section.png) no-repeat; min-height:153px}
-.page-main .header-section {left:0; top:131px; background:none; padding:0}
+.page-main .header-section {left:9px; top:131px; background:none; padding:0}
+.page-animation .header-section {left:9px; top:131px; background:none; padding:0}
 .header-section h1 {font:32px/34px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; margin:0; padding:16px 0 0 0; letter-spacing:1px}
+.header-section h1 em {font-style:normal; font-family:webfontregular, arial, helvetica, sans-serif}
+.header-section h1 span {font-size:16px; position:relative; top:-10px}
 .header-section-test h1 {font-size:24px; line-height:32px}
 .header-section ul {margin:0; padding:18px 0 0 0; list-style:none; width:100%; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
 .header-section ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -150,6 +152,7 @@ img {border:none}
 .header-section-expert h1 {font-size:19px; line-height:23px; padding:25px 0 0 0}
 
 .main {height:648px; position:relative}
+.new-main {height:510px; position:relative}
 
 .main-75 {position:absolute; right:-41px; top:-222px; width:580px; height:586px; background:url(../images/main-75-bg.png); overflow:hidden}
 .main-75-logo {position:absolute; right:42px; top:216px}
@@ -163,7 +166,7 @@ img {border:none}
 
 .main-vk {display:block; position:absolute; right: 0px; top: -182px; width: 546px; height: 530px; background: url('../images/site_nescafe_banner.png'); overflow:hidden; text-decoration:none; cursor:pointer}
 
-.main-sun {display:block; position:absolute; right:0; top:-182px; width:526px; height:533px; overflow:hidden; cursor:pointer; text-decoration:none}
+.main-sun {display:block; position:absolute; right:45px; top:-146px; width:429px; height:434px; overflow:hidden; cursor:pointer; text-decoration:none}
 .main-sun-bg-1 {display:block; position:absolute; left:0; top:0; width:526px; height:533px; overflow:hidden; line-height:0}
 .main-sun-bg-1 img {position:absolute; left:0; top:0}
 .main-sun-bg-2 {display:none; position:absolute; left:0; top:0; width:526px; height:533px; overflow:hidden; line-height:0}
@@ -172,23 +175,23 @@ img {border:none}
 .main-sun-text-1 {display:block; position:absolute; left:0; top:0; width:526px; height:533px; background:url(../images/main-sun-text.png)}
 .main-sun-text-2 {display:none; position:absolute; left:0; top:0; width:526px; height:533px; background:url(../images/main-sun-text.png) left -533px}
 
-.main-gold {display:block; width:269px; height:268px; position:absolute; left:194px; top:144px; overflow:hidden}
+.main-gold {display:block; width:267px; height:265px; position:absolute; left:228px; top:92px; overflow:hidden}
 .main-gold img {display:none; position:absolute; left:0; top:0}
 .main-gold img:first-child {display:block}
 
-.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:332px; top:389px; overflow:hidden}
+.main-way {width:266px; height:332px; background:url(../images/main-way.png); position:absolute; left:332px; top:-11px; overflow:hidden}
 .main-way-title {display:block; font:21px/25px SansRoundedWeb, arial, helvetica, sans-serif; color:#a20909; text-transform:uppercase; padding:48px 0 0 31px}
 .main-way-text {display:block; font:15px/16px SansRoundedLightWeb, arial, helvetica, sans-serif; padding:3px 0 0 31px}
 
-.main-berry {width:107px; height:322px; position:absolute; left:410px; top:320px; overflow:hidden; line-height:0}
+.main-berry {width:107px; height:322px; position:absolute; left:410px; top:120px; overflow:hidden; line-height:0}
 
-.main-scroll {position:absolute; left:638px; top:486px; color:#fff; font-size:14px; padding:0 0 0 33px; background:url(../images/main-scroll.png) no-repeat 4px center}
+.main-scroll {position:absolute; left:638px; top:6px; color:#fff; font-size:14px; padding:0 0 0 33px; background:url(../images/main-scroll.png) no-repeat 4px center}
 .page-main-loading .main-scroll {display:none}
-.main-auto {position:absolute; display:block; left:638px; top:509px; color:#fff; font-size:14px; line-height:23px; padding:0 0 0 33px; background:url(../images/main-auto.png) no-repeat left center}
+.main-auto {position:absolute; display:block; left:638px; top:29px; color:#fff; font-size:14px; line-height:23px; padding:0 0 0 33px; background:url(../images/main-auto.png) no-repeat left center}
 .page-main-loading .main-auto {display:none}
 .main-auto:hover {color:#fff}
 
-.main-loading {display:none; position:absolute; z-index:10000; left:638px; top:486px; width:44px; height:44px; background:url(../images/fancybox_overlay.png); overflow:hidden}
+.main-loading {display:none; position:absolute; z-index:10000; left:638px; top:6px; width:44px; height:44px; background:url(../images/fancybox_overlay.png); overflow:hidden}
 .main-loading div {width:44px; height:44px; background:url(../images/fancybox_loading.gif) no-repeat center}
 .page-main-loading .main-loading {display:block}
 
@@ -499,7 +502,7 @@ img {border:none}
 .socotvetstvennost-img-photo {width:196px; height:192px; position:relative; line-height:0; overflow:hidden; margin:0 0 45px 22px}
 .socotvetstvennost-img-photo-sup {position:absolute; left:0; top:0}
 
-.expertu {height:769px; position:relative; padding:0 0 0 3px}
+.expertu {height:689px; position:relative; padding:0 0 0 3px}
 .expert-list {width:100%}
 .expert-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .expert-item {float:left; width:235px; padding:0 53px 0 0}
@@ -572,18 +575,18 @@ img {border:none}
 .catalogue-recipes-text {font-size:14px; color:#fff; line-height:19px}
 
 .product {position:relative; width:940px; margin:0 auto}
-.page-3in1 .product {height:935px}
-.page-3in1-2 .product {height:915px}
-.page-3in1-3 .product {height:925px}
-.page-3in1-4 .product {height:915px}
-.page-alta-rica .product {height:905px}
-.page-classic .product {height:875px}
-.page-espresso .product {height:855px}
-.page-gold-classic .product {height:865px}
-.page-gold-barista .product {height:865px}
-.page-gold-strong .product {height:925px}
-.page-green-blend .product {height:865px}
-.page-montego .product {height:915px}
+.page-3in1 .product {height:805px}
+.page-3in1-2 .product {height:745px}
+.page-3in1-3 .product {height:750px}
+.page-3in1-4 .product {height:745px}
+.page-alta-rica .product {height:750px}
+.page-classic .product {height:755px}
+.page-espresso .product {height:745px}
+.page-gold-classic .product {height:745px}
+.page-gold-barista .product {height:745px}
+.page-gold-strong .product {height:745px}
+.page-green-blend .product {height:715px}
+.page-montego .product {height:795px}
 .page-gold-video .product {height:auto}
 
 .product-other {position:absolute; left:27px; top:121px; line-height:0; width:100px}
@@ -685,15 +688,17 @@ img {border:none}
 .test-res-link a,
 .test-res-link a:hover {color:#fff}
 
-.footer {height:270px; max-width:1630px; margin-left:auto; margin-right:auto; min-width:1000px; margin-top:-270px; position:relative}
-.page-main .footer {max-width:1280px; margin-left:auto; margin-right:auto}
-.page-expert .footer {max-width:1250px; margin-left:auto; margin-right:auto}
-.page-catalogue .footer {max-width:1260px; margin-left:auto; margin-right:auto}
-.page-proizvodstvo .footer {max-width:1520px}
-.page-putevoditel .footer {max-width:1400px}
+.footer {height:394px; max-width:1580px; margin-left:auto; margin-right:auto; min-width:1000px; margin-top:-394px; position:relative}
+.page-main .footer {max-width:1200px; margin-left:auto; margin-right:auto}
+.page-animation .footer {max-width:1200px; margin-left:auto; margin-right:auto}
+.page-expert .footer {max-width:1200px; margin-left:auto; margin-right:auto}
+.page-catalogue .footer {max-width:1200px; margin-left:auto; margin-right:auto}
+.page-proizvodstvo .footer {max-width:1400px}
+.page-putevoditel .footer {max-width:1200px}
 .page-socotvetstvennost .footer {max-width:1400px}
-.page-error  .footer {max-width:1280px; margin-left:auto; margin-right:auto}
-.footer-inner {width:940px; margin:0 auto; height:270px; position:relative}
+.page-error  .footer {max-width:1200px; margin-left:auto; margin-right:auto}
+.page-recipes .footer {max-width:1200px}
+.footer-inner {width:870px; margin:0 auto; height:394px; position:relative}
 
 .footer-social {width:100%; height:60px; position:relative; z-index:2}
 .footer-social:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -719,21 +724,25 @@ img {border:none}
 .footer-social-more-item a img {float:left; margin:0 11px 0 0}
 .footer-social-more-window-bottom {height:10px; background:url(../images/footer-social-more-window.png) -347px top; position:relative; line-height:0; font-size:0; overflow:hidden}
 
-.footer-menu {border-top:1px solid #ebebeb; border-bottom:1px solid #ebebeb; text-transform:uppercase; color:#e1e1e1; font:13px/16px SansRoundedWeb, arial, helvetica, sans-serif; padding:12px 0; text-align:center}
+.footer-menu {border-top:1px solid #ebebeb; border-bottom:1px solid #ebebeb; text-transform:uppercase; color:#e1e1e1; font:13px/16px SansRoundedWeb, arial, helvetica, sans-serif; padding:12px 0}
 .footer-menu a {color:#e1e1e1}
 .footer-menu a:hover {color:#424242}
-.footer-menu span {margin:0 12px}
+.footer-menu span {margin:0 15px}
 .footer-menu em,
 .letter-e {font-style:normal; font-family:webfontregular, arial, helvetica, sans-serif}
 
 .footer-menu-2 {font:12px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; white-space:nowrap; padding:37px 0 0 0; color:#505050}
 .footer-menu-2 table {width:100%; border-collapse:collapse}
-.footer-menu-2 table td {white-space:nowrap; padding:0}
+.footer-menu-2 table td {white-space:nowrap; padding:0; vertical-align:top}
 .footer-menu-2 table td.footer-menu-2-sep {width:10%}
 .footer-menu-2 a:hover {color:#505050}
+.footer-menu-2 ul {margin:0; padding:6px 0 0 0; list-style:none; font-size:13px; line-height:14px; text-transform:none}
+.footer-menu-2 ul li {margin:0; padding:0}
 
 .footer-nestle {position:absolute; right:0; bottom:0; line-height:0; width:137px; height:92px; overflow:hidden}
 .page-main .footer-nestle {right:5px}
+.page-catalogue .footer-nestle {right:5px}
+.page-animation .footer-nestle {right:5px}
 
 .window {display:none; position:fixed; width:616px; z-index:9999; left:50%; top:50%; margin:-212px 0 0 -308px}
 .window-inner {position:relative; background:#cf0606; padding:50px 74px 0 41px; border-radius:10px; -moz-border-radius:13px; -webkit-border-radius:13px; -khtml-border-radius:13px; -webkit-box-shadow:0 10px 21px rgba(0, 0, 0, .39); -moz-box-shadow:0 10px 21px rgba(0, 0, 0, .39); box-shadow:0 10px 21px rgba(0, 0, 0, .39)}
@@ -763,7 +772,7 @@ img {border:none}
 
 .main-view {width:100%; position:relative}
 .main-view-inner {margin:0 -1920px; position:relative}
-.main-view-container {width:2560px; height:6738px; margin:0 auto; position:relative}
+.main-view-container {width:2560px; height:6788px; margin:0 auto; position:relative}
 
 .main-line-src {position:fixed; left:-9999px; top:-9999px; width:100%; height:100px; overflow:hidden}
 .main-line-src path {fill:none; stroke:#fff; stroke-width:2px}
@@ -979,7 +988,7 @@ img {border:none}
 .product-video-ctrl ul li.active a {color:#9d6f2f; background-position:left -18px}
 
 .product-press-title {text-align:center; text-transform:uppercase; color:#3e1c00; font:20px/20px SansRoundedWeb, arial, helvetica, sans-serif; padding:30px 0 16px 0}
-.product-press {color:#301b04; font-size:15px; line-height:21px; padding:0 0 160px 0}
+.product-press {color:#301b04; font-size:15px; line-height:21px; padding:0 0 60px 0}
 .product-press p {margin:0; padding:0 0 21px 0}
 .product-press-more {display:none}
 .product-press-more-link {text-align:center; text-transform:uppercase; font:13px/15px SansRoundedWeb, arial, helvetica, sans-serif}
@@ -994,11 +1003,11 @@ img {border:none}
 .gold-2-text-inner p {margin:0; padding:0}
 .gold-2-text-img {float:left; line-height:0; margin:0 -200px 0 -194px; padding:34px 0 0 0}
 
-.gold-2-link {text-align:center; color:#fff; text-transform:uppercase; font:16px/21px SansRoundedWeb, arial, helvetica, sans-serif; padding:7px 0 156px 0}
+.gold-2-link {text-align:center; color:#fff; text-transform:uppercase; font:16px/21px SansRoundedWeb, arial, helvetica, sans-serif; padding:7px 0 56px 0}
 .gold-2-link a {color:#fff}
 .gold-2-link img {vertical-align:middle; margin:0 0 0 7px; position:relative; top:-1px}
 
-.gold-3-poll {padding:38px 0 150px 40px}
+.gold-3-poll {padding:38px 0 50px 40px}
 .gold-3-poll-title {color:#fff; text-transform:uppercase; font:18px/21px SansRoundedWeb, arial, helvetica, sans-serif}
 .gold-3-poll-form {padding:15px 0 0 20px}
 .gold-3-poll-form form {margin:0; padding:0}
@@ -1060,3 +1069,24 @@ img {border:none}
 .promo-item-place {color:#cfa06f; font-size:12px; line-height:18px; margin:-19px 0 0 0; letter-spacing:0; font-weight:bold}
 .promo-item-date {color:#cfa06f; font-size:12px; line-height:18px; letter-spacing:0; font-weight:bold}
 .promo-item-anonce {font-size:12px; line-height:16px; letter-spacing:0; padding:3px 0 0 0}
+
+.main-test-link {position:absolute; left:360px; top:180px; width:339px; height:396px; background:url(../images/main-test.png)}
+.main-test-link a {display:block; width:161px; height:161px; position:absolute; left:48px; top:142px}
+
+.main-new-berry {position:absolute; left:664px; top:432px; text-decoration:none}
+.main-new-berry-img {position:absolute; left:0; top:0}
+.main-new-berry-title {position:absolute; left:62px; top:11px; color:#fff; text-transform:uppercase; font:13px/14px SansRoundedWeb, arial, helvetica, sans-serif; white-space:nowrap}
+
+.footer-new-social {text-align:center; font:12px/19px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 55px 0}
+.footer-new-social-block {display:inline-block; vertical-align:top; margin:0 0 0 14px}
+.footer-new-social-block:first-child {margin:0}
+.footer-new-social-icon {float:left; margin:0 7px 0 0}
+.footer-new-social-icon-vk {width:98px; height:82px; background:url(../images/footer-new-social-icon-vk.png)}
+.footer-new-social-block:hover .footer-new-social-icon-vk {background-position:left -82px}
+.footer-new-social-icon-facebook {width:94px; height:81px; background:url(../images/footer-new-social-icon-facebook.png)}
+.footer-new-social-block:hover .footer-new-social-icon-facebook {background-position:left -81px}
+.footer-new-social-icon-youtube {width:91px; height:79px; background:url(../images/footer-new-social-icon-youtube.png)}
+.footer-new-social-block:hover .footer-new-social-icon-youtube {background-position:left -79px}
+.footer-new-social-text {float:left; text-align:left; color:#c60a16}
+.footer-new-social-text a {color:#696969}
+.footer-new-social-text a:hover {color:#505050}

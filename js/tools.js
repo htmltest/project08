@@ -4,19 +4,6 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
 
     $(document).ready(function() {
 
-        // Поиск
-        $('.header-search-input input').focus(function() {
-            if ($(this).val() == 'Поиск') {
-                $(this).val('');
-            }
-        });
-
-        $('.header-search-input input').blur(function() {
-            if ($(this).val() == '') {
-                $(this).val('Поиск');
-            }
-        });
-
         // Поделиться +
         $('.footer-social-more-link').click(function() {
             $('.footer-social-more-window').slideToggle();
@@ -490,6 +477,61 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+    });
+
+    $(document).ready(function() {
+        $('.main-gold img').stop(true, true);
+        $('.main-gold img').eq(1).fadeIn(3000, function() {
+            $('.main-gold img').eq(2).fadeIn(3000, function() {
+                $('.main-gold img').eq(1).hide();
+                $('.main-gold img').eq(2).fadeOut(3000);
+            });
+        });
+        window.setInterval(function() {
+            $('.main-gold img').stop(true, true);
+            $('.main-gold img').eq(1).fadeIn(3000, function() {
+                $('.main-gold img').eq(2).fadeIn(3000, function() {
+                    $('.main-gold img').eq(1).hide();
+                    $('.main-gold img').eq(2).fadeOut(3000);
+                });
+            });
+        }, 9000);
+    });
+
+    $(document).ready(function() {
+        var mainSunSpeed = 4000;
+
+        $('.main-sun').each(function() {
+            $('.main-sun-bg-1 img').attr('src', $('.main-sun-bg-1 img').attr('src'));
+            $('.main-sun-bg-1 img').load(function() {
+                window.setTimeout(function() {
+                    $('.main-sun-text-1').fadeOut(mainSunSpeed / 2, 'linear');
+                    $('.main-sun-text-2').fadeIn(mainSunSpeed / 2, 'linear');
+                }, mainSunSpeed / 2);
+                $('.main-sun-bg-2').fadeIn(mainSunSpeed);
+            });
+        });
+    });
+
+    $(window).load(function() {
+        if ($('.main-new-berry-img').length > 0) {
+            var rotationNewBerry = function() {
+                $('.main-new-berry-img').rotate({
+                    animateTo: 15,
+                    duration: 2000,
+                    easing: $.easing.easeInQuad,
+                    callback: function() {
+                        $('.main-new-berry-img').rotate({
+                            animateTo: -15,
+                            duration: 2000,
+                            easing: $.easing.easeInQuad,
+                            callback: rotationNewBerry
+                        });
+                    }
+                });
+            }
+            rotationNewBerry();
+        }
     });
 
 })(jQuery);
