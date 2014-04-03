@@ -74,9 +74,16 @@ img {border:none}
 .header-ctrl-link {float:right; font-size:12px; line-height:18px; padding:8px 0 0 17px}
 
 .header-help-link {float:right; line-height:0; padding:25px 0 0 21px}
-.header-search-link {float:right; line-height:0; padding:25px 0 0 0}
+.header-search {float:right; line-height:0; padding:25px 0 0 0; position:relative}
+.header-search-link {position:relative}
+.header-search-form {position:absolute; right:-9px; top:19px; width:0; overflow:hidden; height:28px}
+.header-search-form form {position:absolute; right:0; top:0; width:171px; height:28px; margin:0; padding:0; background:url(../images/header-search-form.png)}
+.header-search-form-input {position:absolute; left:0; top:0}
+.header-search-form-input input {vertical-align:top; width:134px; height:18px; font:12px/18px arial, helvetica, sans-serif; color:#000; background:none; border:none; margin:0; padding:5px 0 5px 12px; outline:none}
+.header-search-form-submit {position:absolute; right:9px; top:6px}
+.header-search-form-submit input {vertical-align:top; width:16px; height:16px; border:none; background:url(../images/header-search-submit.png); margin:0; padding:0; outline:none; cursor:pointer}
 
-.header-menu {position:absolute; right:0; top:59px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
+.header-menu {position:absolute; right:0; top:59px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px; z-index:2}
 .header-menu ul {float:right; margin:0; padding:0; list-style:none}
 .header-menu ul li {float:left; margin:0 0 0 28px; padding:0; position:relative}
 .header-menu ul li ul {position:absolute; left:0; top:24px; font-size:12px; white-space:nowrap}
@@ -229,6 +236,7 @@ img {border:none}
 .content-img-max-sup {position:absolute; left:0; top:0}
 .content-img-big {float:left; clear:left; margin:0 33px 20px 0; width:171px; height:172px; position:relative; overflow:hidden; line-height:0}
 .content-img-big-sup {position:absolute; left:0; top:0}
+.content-img-big a:hover {opacity:.3; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30)}
 
 .detail-link {font:14px/18px SansRoundedWeb, arial, helvetica, sans-serif; letter-spacing:1px}
 .detail-link img {vertical-align:middle}
@@ -1090,3 +1098,24 @@ img {border:none}
 .footer-new-social-text {float:left; text-align:left; color:#c60a16}
 .footer-new-social-text a {color:#696969}
 .footer-new-social-text a:hover {color:#505050}
+
+.right-catalogue {font-size:0; line-height:0; letter-spacing:-1px; margin-left:-20px; padding:94px 0 0 0}
+.right-catalogue a {color:#cf0606}
+.right-catalogue a:hover {color:#cac9c9}
+.right-catalogue-item {display:inline-block; vertical-align:top; width:50%; text-align:center; font:12px/14px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:0; margin:0 0 -7px 0}
+.right-catalogue-item strong {display:block; height:128px; line-height:128px; position:relative; margin:0 -10px}
+.right-catalogue-item strong img {vertical-align:middle}
+.right-catalogue-item span {display:block; position:relative; margin-top:-12px}
+
+.barista-3-steps {width:805px; margin:56px 0 0 133px; padding:0 0 100px 0}
+.barista-3-steps-title {font:50px/50px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:-3px}
+.barista-3-steps-text {color:#fff; font:21px/25px SansRoundedWeb, arial, helvetica, sans-serif; padding:12px 100px 25px 0}
+.barista-3-steps-1 {background:url(../images/barista-3-steps-1.png) no-repeat; height:1184px; width:800px; text-align:right; color:#4b1005; font:30px/36px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:-1px}
+.barista-3-steps-text-1 {padding:290px 0 0 0}
+.barista-3-steps-text-2 {padding:300px 0 0 0}
+.barista-3-steps-text-3 {padding:242px 0 0 0}
+.barista-3-steps-2 {background:url(../images/barista-3-steps-2.png) no-repeat; width:1069px; height:649px; margin-left:-153px; color:#fff; font:30px/36px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:-1px}
+.barista-3-steps-text-4 {padding:90px 0 0 140px}
+
+.anounses-top {overflow:visible}
+.anounses-top img {position:absolute; left:-105px; top:-140px}

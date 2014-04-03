@@ -477,6 +477,12 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        $('.header-search-link a').click(function() {
+            $('.header-search-form').animate({'width': 171});
+            $('.header-search-form-input input').focus();
+            return false;
+        });
+
     });
 
     $(document).ready(function() {
