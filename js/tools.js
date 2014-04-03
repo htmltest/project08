@@ -483,6 +483,14 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        $(document).click(function(e) {
+            if ($(e.target).parents().filter('.header-search').length == 0) {
+                if ($('.header-search-form-input input').val() == '') {
+                    $('.header-search-form').animate({'width': 0});
+                }
+            }
+        });
+
     });
 
     $(document).ready(function() {
