@@ -23,6 +23,8 @@ body.page-gold-video {background:#d2a856 fixed url(../images/bg-gold-classic.jpg
 body.page-recipes {background:#c10909 url(../images/bg-recepies.jpg) center top}
 body.page-proizvodstvo {background-color:#c10909; background-position:center bottom}
 
+.page-gold-video-bg {position:fixed; left:0; top:0; width:100%; height:100%; background:#d2a856 fixed url(../images/bg-gold-classic.jpg) center top; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
+
 a {color:#cac9c9; outline:none; text-decoration:none}
 a:hover {color:#505050}
 
