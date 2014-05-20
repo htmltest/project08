@@ -626,22 +626,25 @@ img {border:none}
 .product-breadcrumbs a {color:#fff}
 .product-content h3 {margin:0; padding:24px 0 10px 0; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:1px}
 .product-content h3 span {text-transform:lowercase}
-.product-text {padding:0 0 0 20px; width:260px}
+.product-text {width:230px; font-size:12px; line-height:14px}
+.product-text-detail {display:none}
 .product-text p {margin:0; padding:0}
 .product-text .dg-vk {padding:18px 0 0 0}
 .product-text .dg-vk+.dg-vk {padding:7px 0 0 0}
 .product-text a,
 .product-text a:hover {color:#fff}
+.product-text-detail-link {text-align:right; font:bold 12px/14px SansRoundedWeb, arial, helvetica, sans-serif; padding:14px 0 0 0; letter-spacing:1px}
 
 .product-text-barista {text-transform:uppercase; color:#d9230b; font:15px/20px SansRoundedWeb, arial, helvetica, sans-serif; padding:34px 0 0 0; white-space:nowrap}
 .product-text-barista a,
 .product-text-barista a:hover {color:#d9230b}
 .product-text-barista img {vertical-align:middle; margin:0 0 2px 3px}
 
-.product-links {position:absolute; left:749px; top:440px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px}
+.product-links {position:absolute; left:749px; top:300px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px}
 .product-links a,
 .product-links a:hover {color:#fff}
 .product-link {padding:0 0 9px 17px; background:url(../images/product-link.png) no-repeat left 2px; position:relative}
+.product-links-social {white-space:nowrap; position:relative; margin-left:-8px; padding:0 0 30px 0}
 
 .product-window {display:none; position:absolute; left:-152px; top:-371px; width:332px; height:333px; background:url(../images/product-window.png); z-index:99}
 .recipes-var-nutrition .product-window {background:url(../images/product-window-2.png)}

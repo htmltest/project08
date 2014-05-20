@@ -530,6 +530,16 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             window.setTimeout(nextMainGold, 2000);
         }
 
+        // текст на продуктовой странице
+        $('.product-text-detail-link a').click(function() {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+            $('.product-text-detail').slideToggle();
+            return false;
+        });
+
     });
 
     $(window).load(function() {
