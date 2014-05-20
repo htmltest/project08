@@ -627,13 +627,15 @@ img {border:none}
 .product-content h3 {margin:0; padding:24px 0 10px 0; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:1px}
 .product-content h3 span {text-transform:lowercase}
 .product-text {width:230px; font-size:12px; line-height:14px}
-.product-text-detail {display:none}
+.product-text-detail {position:relative; overflow:hidden; max-height:70px}
+.product-text-detail-open {max-height:none}
+.product-text-detail-inner {position:relative}
 .product-text p {margin:0; padding:0}
 .product-text .dg-vk {padding:18px 0 0 0}
 .product-text .dg-vk+.dg-vk {padding:7px 0 0 0}
 .product-text a,
 .product-text a:hover {color:#fff}
-.product-text-detail-link {text-align:right; font:bold 12px/14px SansRoundedWeb, arial, helvetica, sans-serif; padding:14px 0 0 0; letter-spacing:1px}
+.product-text-detail-link {display:none; text-align:right; font:bold 12px/14px SansRoundedWeb, arial, helvetica, sans-serif; padding:14px 0 0 0; letter-spacing:1px}
 
 .product-text-barista {text-transform:uppercase; color:#d9230b; font:15px/20px SansRoundedWeb, arial, helvetica, sans-serif; padding:34px 0 0 0; white-space:nowrap}
 .product-text-barista a,

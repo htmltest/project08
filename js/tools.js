@@ -491,6 +491,22 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             }
         });
 
+        // текст на продуктовой странице
+        $(window).load(function() {
+            if ($('.product-text-detail-inner').height() > $('.product-text-detail').height()) {
+                $('.product-text-detail-link').show();
+            }
+        });
+
+        $('.product-text-detail-link a').click(function() {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+            $('.product-text-detail').toggleClass('product-text-detail-open');
+            return false;
+        });
+
     });
 
     $(window).load(function() {
@@ -529,16 +545,6 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
         if ($('.main-gold img').length > 1) {
             window.setTimeout(nextMainGold, 2000);
         }
-
-        // текст на продуктовой странице
-        $('.product-text-detail-link a').click(function() {
-            var curLink = $(this);
-            var curText = curLink.html();
-            curLink.html(curLink.attr('rel'));
-            curLink.attr('rel', curText);
-            $('.product-text-detail').slideToggle();
-            return false;
-        });
 
     });
 
