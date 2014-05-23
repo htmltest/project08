@@ -148,9 +148,6 @@ img {border:none}
 .header-way sup {position:absolute; display:block; left:0; top:0; width:130px; height:130px; background:url(../images/header-way.png)}
 .header-way span {position:absolute; display:block; left:11px; bottom:19px; width:100px; padding:0 0 0 15px; background:url(../images/header-way-title.png) no-repeat left top}
 
-.header-test {position:absolute; left:652px; top:235px; display:block; width:106px; height:56px; padding:73px 0 0 23px; background:url(../images/header-test.png); font:12px/14px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; text-decoration:none; letter-spacing:1px}
-.header-test:hover {color:#fff}
-
 .header-expert-title {position:absolute; left:133px; top:115px}
 .header-expert-title h1 {font:19px/23px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; text-transform:uppercase; margin:0; padding:0; letter-spacing:1px}
 .header-catalogue-title {position:absolute; left:133px; top:159px}
@@ -578,7 +575,6 @@ img {border:none}
 .catalogue-rubric-4 {width:100%; padding:0 0 89px 0}
 .catalogue-rubric-4:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .catalogue-item-13 {float:left; margin:-80px 0 0 14px; min-width:240px; min-height:377px}
-.catalogue .header-test {left:652px; top:auto; bottom:50px}
 
 .catalogue-recipes {position:absolute; left:596px; top:498px; width:225px}
 .catalogue-recipes-link {margin:0 0 0 -23px; padding:0 0 10px 23px; background:url(../images/catalogue-recipes-link.png) no-repeat left 2px; font:18px/24px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; letter-spacing:1px}
@@ -905,7 +901,6 @@ img {border:none}
 .main-product-1 {position:absolute; left:795px; top:6147px; opacity:0}
 .main-product-2 {position:absolute; left:899px; top:6147px; opacity:0}
 .main-product-3 {position:absolute; left:1017px; top:6152px; opacity:0}
-.main-header-test {left:1450px; top:6235px; opacity:0}
 
 .window-error-text {color:#fff; text-align:center; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 51px 0}
 .window-success-text {color:#fff; text-align:center; font:24px/30px SansRoundedWeb, arial, helvetica, sans-serif; padding:0 0 51px 0}
@@ -1089,6 +1084,9 @@ img {border:none}
 
 .main-test-link {position:absolute; left:360px; top:180px; width:339px; height:396px; background:url(../images/main-test.png)}
 .main-test-link a {display:block; width:161px; height:161px; position:absolute; left:48px; top:142px}
+
+.inner-test-link {left:650px; top:60px; z-index:-1}
+.catalogue .inner-test-link {top:750px; z-index:0}
 
 .main-new-berry {position:absolute; left:664px; top:432px; text-decoration:none}
 .main-new-berry-img {position:absolute; left:0; top:0}
