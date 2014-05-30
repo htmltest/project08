@@ -1089,9 +1089,9 @@ img {border:none}
 .main-game-link {position:absolute; left:370px; top:270px; width:300px; height:300px; background:url(../images/main-game-link.png)}
 .main-game-link a {display:block; width:300px; height:300px}
 
-.inner-test-link {width:170px; height:198px; background:url(../images/main-test-mini.png); left:650px; top:180px}
-.inner-test-link a {width:80px; height:80px; left:24px; top:71px; z-index:3}
-.catalogue .inner-test-link {left:675px; top:-30px; z-index:0}
+.inner-test-link {width:224px; height:261px; background:url(../images/main-test-mini.png); left:630px; top:130px}
+.inner-test-link a {width:106px; height:106px; left:32px; top:94px; z-index:3}
+.catalogue .inner-test-link {left:645px; top:-60px; z-index:0}
 
 .main-new-berry {position:absolute; left:664px; top:432px; text-decoration:none}
 .main-new-berry-img {position:absolute; left:0; top:0}
