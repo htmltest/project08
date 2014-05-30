@@ -8,19 +8,16 @@
 
         <!--[if IE]>
             <link rel="stylesheet" href="css/ie.css" type="text/css" />
-            <script type="text/javascript" src="js/excanvas.compiled.js"></script>
         <![endif]-->
 
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/swfobject.js"></script>
         <script type="text/javascript" src="js/tools.js"></script>
-
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jQueryRotate.2.2.js"></script>
 
         <meta name="viewport" content="width=1024" />
     </head>
 
-    <body class="page-main">
+    <body>
 
         <!-- wrapper -->
         <div class="wrapper">
@@ -29,85 +26,96 @@
                 <!-- header -->
                 <div class="header">
 
-                    <div class="header-fix-bg"></div>
-                    <!-- header fix -->
-                    <div class="header-fix">
+                    <div class="logo"><img src="images/logo.png" alt="" width="92" height="21" /></div>
 
-                        <div class="logo"><img src="images/logo.png" alt="" width="92" height="21" /></div>
+                    <!-- header ctrl -->
+                    <div class="header-ctrl">
 
-                        <!-- header ctrl -->
-                        <div class="header-ctrl">
-
-                            <div class="header-ctrl-link">
-                                <div><a href="#">Авторизация</a></div>
-                                <div><a href="#">Регистрация</a></div>
-                            </div>
-
-                            <div class="header-help-link"><a href="#"><img src="images/header-help-link.png" alt="" width="12" height="18" /></a></div>
-                            <div class="header-search">
-                                <div class="header-search-link"><a href="#"><img src="images/header-search-link.png" alt="" width="16" height="16" /></a></div>
-                                <div class="header-search-form">
-                                    <form action="#" method="post">
-                                        <div class="header-search-form-input"><input type="text" name="search" value="" /></div>
-                                        <div class="header-search-form-submit"><input type="submit" value="" /></div>
-                                    </form>
-                                </div>
-                            </div>
-
+                        <div class="header-ctrl-link">
+                            <div><a href="#">Авторизация</a></div>
+                            <div><a href="#">Регистрация</a></div>
                         </div>
-                        <!-- header ctrl END -->
 
-                        <!-- header menu -->
-                        <div class="header-menu">
-                            <ul>
-                                <li><a href="#">Наш кофе</a></li>
-                                <li><a href="#">Кофейный позитив</a></li>
-                                <li><a href="#">Наше Производство</a></li>
-                                <li><a href="#">Все о кофе</a></li>
-                                <li><a href="#">План Nescaf<em>é</em><span>®</span></a></li>
-                            </ul>
+                        <div class="header-help-link"><a href="#"><img src="images/header-help-link.png" alt="" width="12" height="18" /></a></div>
+                        <div class="header-search">
+                            <div class="header-search-link"><a href="#"><img src="images/header-search-link.png" alt="" width="16" height="16" /></a></div>
+                            <div class="header-search-form">
+                                <form action="#" method="post">
+                                    <div class="header-search-form-input"><input type="text" name="search" value="" /></div>
+                                    <div class="header-search-form-submit"><input type="submit" value="" /></div>
+                                </form>
+                            </div>
                         </div>
-                        <!-- header menu END -->
 
                     </div>
-                    <!-- header fix END -->
+                    <!-- header ctrl END -->
+
+                    <!-- header menu -->
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#">Наш кофе</a></li>
+                            <li><a href="#">Кофейный позитив</a></li>
+                            <li><a href="#">Наше Производство</a></li>
+                            <li><a href="#">Все о кофе</a></li>
+                            <li><a href="#">План Nescaf<em>é</em><span>®</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- header menu END -->
 
                     <!-- header section -->
                     <div class="header-section">
-                        <h1>Все начинается<br />с Nescaf<em>é</em><span>®</span></h1>
+                        <h1>Поймай зерно</h1>
                     </div>
                     <!-- header section END -->
 
                 </div>
                 <!-- header END -->
 
-                <!-- new main -->
-                <div class="new-main">
+                <!-- content -->
+                <div class="content">
 
-                    <div class="main-game-link"><a href="#"></a></div>
+                    <script type="text/javascript">
+                        <!-- Компания Adobe рекомендует разработчиками использовать для определения версии проигрывателя Flash Player объект SWFObject2. -->
+                        <!-- Дополнительные сведения см. на странице SWFObject по адресу http://code.google.com/p/swfobject. -->
+                        <!-- Информацию также можно получить в центре разработчиков Adobe Developer Connection в разделе "Определение версии Flash Player и внедрение файлов SWF с SWFObject 2" -->
+                        <!-- Чтобы отключить проверку версии Flash Player, установите минимальное значение версии (ноль) -->
+                        var swfVersionStr = "10.2.153";
+                        <!-- xiSwfUrlStr может использоваться для определения экспресс-установщика SWF. -->
+                        var xiSwfUrlStr = "";
+                        var flashvars = {};
+                        var params = {};
+                        params.quality = "high";
+                        params.bgcolor = "#ffffff";
+                        params.play = "true";
+                        params.loop = "true";
+                        params.wmode = "window";
+                        params.scale = "showall";
+                        params.menu = "true";
+                        params.devicefont = "false";
+                        params.salign = "";
+                        params.allowscriptaccess = "sameDomain";
+                        var attributes = {};
+                        attributes.id = "Graphics_site";
+                        attributes.name = "Graphics_site";
+                        attributes.align = "middle";
+                        swfobject.embedSWF(
+                            "flash/Graphics_site.swf", "flashContent",
+                            "807", "578",
+                            swfVersionStr, xiSwfUrlStr,
+                            flashvars, params, attributes);
+                    </script>
 
-                    <a href="#" class="main-sun">
-                        <img src="images/main-barista-one.png" alt="" width="429" height="434" />
-                        <img src="images/main-barista-two.png" alt="" width="429" height="434" />
-                        <img src="images/main-barista-three.png" alt="" width="429" height="434" />
-                    </a>
-
-                    <a href="#" class="main-gold">
-                        <img src="images/goldcup_banner_homepage_1.png" alt="" width="316" height="268" />
-                        <img src="images/goldcup_banner_homepage_2.png" alt="" width="316" height="268" />
-                        <img src="images/goldcup_banner_homepage_3.png" alt="" width="316" height="268" />
-                    </a>
-
-                    <a href="#" class="main-new-berry">
-                        <img src="images/main-new-berry.png" alt="" width="60" height="55" class="main-new-berry-img" />
-                        <span class="main-new-berry-title">Путь кофейного<br />зернышка</span>
-                    </a>
+                    <div id="flashContent">
+                        <a href="http://www.adobe.com/go/getflash">
+                            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Загрузить Adobe Flash Player" />
+                        </a>
+                        <p>Для корректного отображения данной страницы требуется проигрыватель Flash Player версии 10.2.153 или новее.</p>
+                    </div>
 
                 </div>
-                <!-- new main END -->
+                <!-- content END -->
 
             </div>
-
         </div>
         <!-- wrapper END -->
 

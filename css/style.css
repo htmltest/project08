@@ -93,7 +93,7 @@ img {border:none}
 .header-menu ul li em {font-style:normal; font-family:webfontregular, arial, helvetica, sans-serif}
 .header-menu ul li span {font-size:9px; position:relative; top:-4px}
 
-.header-section {position:absolute; left:48px; top:141px; padding:0 0 0 162px; background:url(../images/header-section.png) no-repeat; min-height:153px}
+.header-section {position:absolute; left:48px; top:141px; padding:0 0 0 162px; background:url(../images/header-section.png) no-repeat; min-height:153px; z-index:2}
 .page-main .header-section {left:9px; top:131px; background:none; padding:0}
 .page-animation .header-section {left:9px; top:131px; background:none; padding:0}
 .header-section h1 {font:32px/34px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; margin:0; padding:16px 0 0 0; letter-spacing:1px}
@@ -610,7 +610,7 @@ img {border:none}
 .product-3in1-classic {position:absolute; left:96px; top:14px}
 .product-3in1-caramel {position:absolute; left:163px; top:16px}
 .product-alta-rica {position:absolute; left:174px; top:-45px}
-.product-classic {position:absolute; left:200px; top:-71px}
+.product-classic {position:absolute; left:230px; top:51px}
 .product-espresso {position:absolute; left:98px; top:-155px}
 .product-gold-classic {position:absolute; left:128px; top:-113px}
 .product-gold-barista {position:absolute; left:327px; top:53px}
@@ -642,6 +642,7 @@ img {border:none}
 .product-links a,
 .product-links a:hover {color:#fff}
 .product-link {padding:0 0 9px 17px; background:url(../images/product-link.png) no-repeat left 2px; position:relative}
+.product-link-2 {white-space: nowrap; text-transform:uppercase}
 .product-links-social {white-space:nowrap; position:relative; margin-left:-8px; padding:0 0 30px 0}
 
 .product-window {display:none; position:absolute; left:-152px; top:-371px; width:332px; height:333px; background:url(../images/product-window.png); z-index:99}
@@ -1085,8 +1086,12 @@ img {border:none}
 .main-test-link {position:absolute; left:360px; top:180px; width:339px; height:396px; background:url(../images/main-test.png)}
 .main-test-link a {display:block; width:161px; height:161px; position:absolute; left:48px; top:142px}
 
-.inner-test-link {left:650px; top:60px; z-index:-1}
-.catalogue .inner-test-link {top:750px; z-index:0}
+.main-game-link {position:absolute; left:370px; top:270px; width:300px; height:300px; background:url(../images/main-game-link.png)}
+.main-game-link a {display:block; width:300px; height:300px}
+
+.inner-test-link {width:170px; height:198px; background:url(../images/main-test-mini.png); left:650px; top:180px}
+.inner-test-link a {width:80px; height:80px; left:24px; top:71px; z-index:3}
+.catalogue .inner-test-link {left:675px; top:-30px; z-index:0}
 
 .main-new-berry {position:absolute; left:664px; top:432px; text-decoration:none}
 .main-new-berry-img {position:absolute; left:0; top:0}
