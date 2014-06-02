@@ -622,7 +622,8 @@ img {border:none}
 .product-breadcrumbs a {color:#fff}
 .product-content h3 {margin:0; padding:24px 0 10px 0; font:16px/19px SansRoundedWeb, arial, helvetica, sans-serif; text-transform:uppercase; color:#fff; letter-spacing:1px}
 .product-content h3 span {text-transform:lowercase}
-.product-text {width:230px; font-size:12px; line-height:14px}
+.product-text {width:200px; font-size:12px; line-height:14px}
+.product-text sup {vertical-align:baseline; position:relative; top:-4px}
 .product-text-detail {position:relative; overflow:hidden; max-height:70px}
 .product-text-detail-open {max-height:none}
 .product-text-detail-inner {position:relative}
@@ -639,11 +640,14 @@ img {border:none}
 .product-text-barista img {vertical-align:middle; margin:0 0 2px 3px}
 
 .product-links {position:absolute; left:749px; top:300px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px}
+.page-classic .product-links {left:755px}
 .product-links a,
 .product-links a:hover {color:#fff}
 .product-link {padding:0 0 9px 17px; background:url(../images/product-link.png) no-repeat left 2px; position:relative}
-.product-link-2 {white-space: nowrap; text-transform:uppercase}
+.product-link-2 {white-space:nowrap; text-transform:uppercase; font-size:16px; line-height:19px; padding-bottom:3px}
+.product-link-2 sup {vertical-align:baseline; position:relative; top:-4px}
 .product-links-social {white-space:nowrap; position:relative; margin-left:-8px; padding:0 0 30px 0}
+.page-classic .product-links-social {padding-left:22px}
 
 .product-window {display:none; position:absolute; left:-152px; top:-371px; width:332px; height:333px; background:url(../images/product-window.png); z-index:99}
 .recipes-var-nutrition .product-window {background:url(../images/product-window-2.png)}
@@ -1131,3 +1135,12 @@ img {border:none}
 
 .anounses-top {overflow:visible}
 .anounses-top img {position:absolute; left:-105px; top:-140px}
+
+.product-content h1 {
+    color: #FFFFFF;
+    font: 16px/19px SansRoundedWeb,arial,helvetica,sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 24px 0 10px;
+    text-transform: uppercase;
+}

@@ -446,6 +446,10 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             $(this).parent().css({'background': 'none'});
         });
 
+        $(window).load(function() {
+            $('.catalogue-rubric-1 a, .catalogue-rubric-2 a, .catalogue-rubric-3 a, .catalogue-rubric-4 a').css({'background': 'none'});
+        });
+
         // gold poll
         $('.gold-3-poll-item span input:checked').parent().addClass('checked');
         $('.gold-3-poll-item div').click(function() {
