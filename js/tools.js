@@ -511,6 +511,73 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        // new classic video
+        $('.new-classic-slider').each(function() {
+            var curSlider = $(this);
+            curSlider.data('curIndex', 0);
+            curSlider.data('disableAnimation', false);
+            curSlider.find('ul').width(curSlider.find('li').length * curSlider.find('li:first').width());
+            $('.new-classic-slider-prev').hide();
+            if (curSlider.find('li').length < 4) {
+                $('.new-classic-slider-show').hide();
+            }
+        });
+
+        $('.new-classic-slider-next').click(function() {
+            var curSlider = $('.new-classic-slider');
+            if (!curSlider.data('disableAnimation')) {
+                curSlider.data('disableAnimation', true);
+
+                var curIndex = curSlider.data('curIndex');
+                curIndex += 3;
+                $('.new-classic-slider-prev').show();
+                if (curIndex >= curSlider.find('li').length - 3) {
+                    curIndex = curSlider.find('li').length - 3;
+                }
+                if (curIndex >= curSlider.find('li').length - 3) {
+                    $('.new-classic-slider-next').hide();
+                }
+                curSlider.data('curIndex', curIndex);
+                curSlider.find('ul').animate({'left': -curIndex * curSlider.find('li:first').width()}, function() {
+                    curSlider.data('disableAnimation', false);
+                });
+            }
+            return false;
+        });
+
+        $('.new-classic-slider-prev').click(function() {
+            var curSlider = $('.new-classic-slider');
+            if (!curSlider.data('disableAnimation')) {
+                curSlider.data('disableAnimation', true);
+
+                var curIndex = curSlider.data('curIndex');
+                curIndex -= 3;
+                $('.new-classic-slider-next').show();
+                if (curIndex < 0) {
+                    curIndex = 0;
+                }
+                if (curIndex == 0) {
+                    $('.new-classic-slider-prev').hide();
+                }
+                curSlider.data('curIndex', curIndex);
+                curSlider.find('ul').animate({'left': -curIndex * curSlider.find('li:first').width()}, function() {
+                    curSlider.data('disableAnimation', false);
+                });
+            }
+            return false;
+        });
+
+        $('.new-classic-slider-content a').click(function() {
+            var curLi = $(this).parent();
+            if (!curLi.hasClass('active')) {
+                var curIndex = $('.new-classic-slider-content li').index(curLi);
+                $('.new-classic-slider-content li').removeClass('active');
+                curLi.addClass('active');
+                $('.new-classic-video-play').html($('.new-classic-video').eq(curIndex).html());
+            }
+            return false;
+        });
+
     });
 
     $(window).load(function() {

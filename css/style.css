@@ -13,6 +13,7 @@ body.page-catalogue {background:#c10909 url(../images/bg-catalogue.jpg) center t
 body.page-3in1 {background:#d59154 url(../images/bg-3in1.jpg) center top}
 body.page-alta-rica {background:#9c3f8f url(../images/bg-alta-rica.jpg) center top}
 body.page-classic {background:#c10909 url(../images/bg-classic.jpg) center top}
+body.page-new-classic {background:#000}
 body.page-espresso {background:#000 url(../images/bg-espresso.jpg) no-repeat center top}
 body.page-gold-classic {background:#d2a856 url(../images/bg-gold-classic.jpg) center top}
 body.page-gold-barista {background:#e7bf9e url(../images/bg-gold-barista.jpg) center top}
@@ -46,6 +47,7 @@ img {border:none}
 .page-3in1-4 .wrapper-inner {background:url(../images/bg-3in1-inner-4.png) no-repeat center top}
 .page-alta-rica .wrapper-inner {background:url(../images/bg-alta-rica-inner.png) no-repeat center top}
 .page-classic .wrapper-inner {background:url(../images/bg-classic-inner.png) no-repeat center top}
+.page-new-classic .wrapper-inner {background:none}
 .page-espresso .wrapper-inner {background:url(../images/bg-espresso-inner.png) no-repeat center top}
 .page-gold-classic .wrapper-inner {background:url(../images/bg-gold-classic-inner.png) no-repeat center top}
 .page-gold-barista .wrapper-inner {background:url(../images/bg-gold-barista-inner.png) no-repeat center top}
@@ -155,6 +157,7 @@ img {border:none}
 .header-catalogue-title h1 span {color:#58330d}
 .header-catalogue-title small {font-size:12px}
 .page-gold-video .header-catalogue-title {top:165px}
+.page-new-classic .header-catalogue-title {top:181px; left:152px}
 .header-section-expert h1 {font-size:19px; line-height:23px; padding:25px 0 0 0}
 
 .main {height:648px; position:relative}
@@ -589,6 +592,7 @@ img {border:none}
 .page-3in1-4 .product {height:745px}
 .page-alta-rica .product {height:750px}
 .page-classic .product {height:755px}
+.page-new-classic .product {height:1031px}
 .page-espresso .product {height:745px}
 .page-gold-classic .product {height:745px}
 .page-gold-barista .product {height:745px}
@@ -1144,3 +1148,24 @@ img {border:none}
     padding: 24px 0 10px;
     text-transform: uppercase;
 }
+
+.new-classic-circle {position:absolute; left:35px; top:4px}
+.new-classic-photo-1 {position:absolute; left:-222px; top:544px}
+.new-classic-photo-2 {position:absolute; left:797px; top:4px}
+.new-classic-photo-3 {position:absolute; left:612px; top:487px}
+.new-classic-photo-4 {position:absolute; left:468px; top:469px}
+.new-classic-photo-5 {position:absolute; left:163px; top:517px}
+.new-classic-link {display:block; left:147px; top:650px; width:316px; height:40px; background:url(../images/new-classic-link.png); position:absolute}
+.new-classic-text {position:absolute; left:154px; top:701px; font:21px/26px SansRoundedWeb, arial, helvetica, sans-serif; color:#fff; text-transform:uppercase; letter-spacing:1px}
+.new-classic-video-play {position:absolute; left:150px; top:118px; width:621px; height:349px}
+.new-classic-slider {position:absolute; left:150px; top:770px; line-height:0}
+.new-classic-slider-content {position:relative; width:426px; overflow:hidden}
+.new-classic-slider-content ul {position:relative; margin:0; padding:0; list-style:none; width:9999px}
+.new-classic-slider-content ul li {float:left; width:144px; margin:0; padding:0}
+.new-classic-slider-content ul li a {display:block; position:relative; width:138px; height:84px; overflow:hidden}
+.new-classic-slider-content ul li.active a {cursor:default}
+.new-classic-slider-prev,
+.new-classic-slider-next {display:block; position:absolute; top:50%; width:15px; height:28px; margin-top:-14px; background:url(../images/new-classic-slider-arrows.png)}
+.new-classic-slider-prev {left:-50px}
+.new-classic-slider-next {right:-50px; background-position:-15px top}
+.new-classic-videos {display:none}
