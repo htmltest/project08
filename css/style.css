@@ -643,14 +643,14 @@ img {border:none}
 .product-text-barista a:hover {color:#d9230b}
 .product-text-barista img {vertical-align:middle; margin:0 0 2px 3px}
 
-.product-links {position:absolute; left:749px; top:300px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px}
+.product-links {position:absolute; left:749px; top:300px; font:14px/16px SansRoundedWeb, arial, helvetica, sans-serif; width:140px; word-wrap:normal}
 .page-classic .product-links {left:755px}
 .product-links a,
 .product-links a:hover {color:#fff}
 .product-link {padding:0 0 9px 17px; background:url(../images/product-link.png) no-repeat left 2px; position:relative}
 .product-link-2 {white-space:nowrap; text-transform:uppercase; font-size:16px; line-height:19px; padding-bottom:3px}
 .product-link-2 sup {vertical-align:baseline; position:relative; top:-4px}
-.product-links-social {white-space:nowrap; position:relative; margin-left:-8px; padding:0 0 30px 0}
+.product-links-social {white-space:nowrap; word-wrap:normal; position:relative; margin-left:-8px; padding:0 0 30px 0}
 .page-classic .product-links-social {padding-left:22px}
 
 .product-window {display:none; position:absolute; left:-152px; top:-371px; width:332px; height:333px; background:url(../images/product-window.png); z-index:99}
