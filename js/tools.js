@@ -573,7 +573,8 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
                 var curIndex = $('.new-classic-slider-content li').index(curLi);
                 $('.new-classic-slider-content li').removeClass('active');
                 curLi.addClass('active');
-                $('.new-classic-video-play').html($('.new-classic-video').eq(curIndex).html());
+                $('.new-classic-video-play').html('<iframe width="621" height="349" src="' + $(this).attr('href') + '" frameborder="0" allowfullscreen></iframe>');
+                $.scrollTo($('.header-catalogue-title'), 300);
             }
             return false;
         });
