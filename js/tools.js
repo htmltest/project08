@@ -579,6 +579,9 @@ var wayNextSpeed    = 500;  // скорость прокрутки "Следую
             return false;
         });
 
+        if (window.location.hash != '') {
+            $('.new-classic-slider-content a[rel="' + window.location.hash.substring(1) + '"]').click();
+        }
     });
 
     $(window).load(function() {
